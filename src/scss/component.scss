@@ -1,0 +1,81 @@
+button.text-black {
+  color: $black;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+.font-weight-600 {
+  font-weight: 600;
+}
+
+.vue2-datetime-input {
+  position: relative;
+
+  .calendar {
+    border: $vue2-datetime-input-calendar-border;
+    border-radius: $vue2-datetime-input-calendar-border-radius;
+    box-shadow: $vue2-datetime-input-calendar-shadow;
+    margin: $vue2-datetime-input-calendar-margin;
+    width: $vue2-datetime-input-calendar-width;
+    position: absolute;
+
+    &-footer {
+      //background-color: $vue2-datetime-input-calendar-footer-bg;
+      padding: $vue2-datetime-input-calendar-footer-padding;
+      border-top: $vue2-datetime-input-calendar-footer-border-top;
+      display: flex;
+
+      &-button {
+        @include button-variant(
+                        $vue2-datetime-input-calendar-footer-button-theme-color,
+                        $vue2-datetime-input-calendar-footer-button-theme-color
+        );
+      }
+    }
+  }
+
+  .month {
+    &-header {
+      display: flex;
+      align-items: stretch;
+      background-color: $vue2-datetime-input-month-header-bg;
+      padding: $vue2-datetime-input-month-header-padding;
+
+      &-button {
+        flex-grow: 0;
+        display: flex;
+        @include button-variant(
+                        $vue2-datetime-input-month-header-button-theme-color,
+                        $vue2-datetime-input-month-header-button-theme-color
+        );
+      }
+
+      &-text-container {
+        flex-grow: 1;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+      }
+    }
+
+    &-week {
+      &-head {
+        background-color: $vue2-datetime-input-month-week-head-bg;
+
+        th {
+          font-weight: $vue2-datetime-input-month-week-head-th-font-weight;
+          padding: $vue2-datetime-input-month-week-head-th-padding;
+          text-transform: uppercase;
+        }
+      }
+
+      &-body {
+        td {
+          width: calc(100% / 7);
+        }
+      }
+    }
+  }
+}

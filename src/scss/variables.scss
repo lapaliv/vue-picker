@@ -1,0 +1,22 @@
+// Calendar (pop-up)
+$vue2-datetime-input-calendar-width: auto !default;
+$vue2-datetime-input-calendar-border: $border-width solid $border-color !default;
+$vue2-datetime-input-calendar-border-radius: $border-radius !default;
+$vue2-datetime-input-calendar-shadow: $box-shadow !default;
+$vue2-datetime-input-calendar-margin: map_get($spacers, 1) auto map_get($spacers, 1) 0 !default;
+
+// Footer
+$vue2-datetime-input-calendar-footer-bg: $light !default;
+$vue2-datetime-input-calendar-footer-padding: map_get($spacers, 1) !default;
+$vue2-datetime-input-calendar-footer-border-top: none !default;
+$vue2-datetime-input-calendar-footer-button-theme-color: $light !default;
+
+// Month
+$vue2-datetime-input-month-header-bg: $white !default;
+$vue2-datetime-input-month-header-padding: map_get($spacers, 1) !default;
+$vue2-datetime-input-month-header-button-theme-color: $light !default;
+
+// Month.Week.Head
+$vue2-datetime-input-month-week-head-bg: $light !default;
+$vue2-datetime-input-month-week-head-th-font-weight: 0 !default;
+$vue2-datetime-input-month-week-head-th-padding: map_get($spacers, 1) map_get($spacers, 1) !default;
