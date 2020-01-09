@@ -1,5 +1,5 @@
 <template>
-    <div id="app" class="w-25 mx-auto mt-5">
+    <div id="app" class="w-50 mx-auto mt-5">
         <Calendar/>
     </div>
 </template>

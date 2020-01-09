@@ -1,0 +1,15 @@
+.vue2-datetime-calendar {
+  background: $white;
+  border: $border-width solid $border-color;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius-lg;
+  position: absolute;
+  margin-top: map_get($spacers, 1);
+  width: 332px;
+
+  &-footer {
+    padding: map_get($spacers, 1) map_get($spacers, 3);
+    text-align: center;
+    margin-top: map_get($spacers, 1);
+  }
+}

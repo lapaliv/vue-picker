@@ -1,0 +1,30 @@
+.vue2-datetime-week {
+  display: flex;
+
+  &-day {
+    flex-grow: 1;
+    padding: map_get($spacers, 1) map_get($spacers, 1);
+    text-align: center;
+    width: calc(100% / 7);
+    min-width: calc(100% / 7);
+
+    button {
+      width: 100%;
+      padding: map_get($spacers, 1) map_get($spacers, 2);
+    }
+
+    &-button {
+      background: $white;
+      border: $border-width solid $white;
+
+      &:hover {
+        background: $light;
+        border: $border-width solid $light;
+      }
+    }
+  }
+
+  &--header {
+    font-weight: $font-weight-bold;
+  }
+}

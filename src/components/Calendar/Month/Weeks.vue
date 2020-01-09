@@ -1,39 +1,74 @@
 <template>
-    <table class="text-center mb-0 w-100">
-        <thead>
-            <tr>
-                <template v-for="shortDay in shortDays">
-                    <th
-                        :key="shortDay"
-                        class="font-weight-500"
-                    >
-                        {{ shortDay }}
-                    </th>
-                </template>
-            </tr>
-        </thead>
-        <tbody class="month-week-body">
-            <template v-for="(week, index) in weeks">
-                <tr :key="index">
-                    <template v-for="{year, month, day, disabled, muted, isToday, isSelected} in week">
-                        <td
-                            :key="`${year}_${month}_${day}`"
-                            class="p-1 text-center align-middle"
-                        >
-                            <button
-                                class="btn w-100 px-1 py-0"
-                                :disabled="disabled"
-                                :class="{'text-muted font-weight-light': muted, 'btn-outline-primary': isToday && !isSelected, 'btn-primary': isSelected && !muted, 'btn-white': !isSelected, 'btn-light font-weight-bold': isSelected && muted}"
-                                @click="selectDay(year, month, day)"
-                            >
-                                {{ day }}
-                            </button>
-                        </td>
-                    </template>
-                </tr>
+    <div>
+        <div class="vue2-datetime-week vue2-datetime-week--header">
+            <template v-for="shortDay in shortDays">
+                <div
+                    :key="shortDay"
+                    class="vue2-datetime-week-day"
+                >
+                    {{ shortDay }}
+                </div>
             </template>
-        </tbody>
-    </table>
+        </div>
+
+        <template v-for="(week, index) in weeks">
+            <div
+                :key="index"
+                class="vue2-datetime-week"
+            >
+                <template v-for="{year, month, day, disabled, muted, isToday, isSelected} in week">
+                    <div
+                        :key="`${year}_${month}_${day}`"
+                        class="vue2-datetime-week-day"
+                    >
+                        <button
+                            class="btn"
+                            :disabled="disabled"
+                            :class="dayButtonClassName(muted, isToday, isSelected)"
+                            @click="selectDay(year, month, day)"
+                        >
+                            {{ day }}
+                        </button>
+                    </div>
+                </template>
+            </div>
+        </template>
+    </div>
+    <!--<table class="text-center mb-0 w-100">-->
+    <!--    <thead>-->
+    <!--        <tr>-->
+    <!--            <template v-for="shortDay in shortDays">-->
+    <!--                <th-->
+    <!--                    :key="shortDay"-->
+    <!--                    class="font-weight-500"-->
+    <!--                >-->
+    <!--                    {{ shortDay }}-->
+    <!--                </th>-->
+    <!--            </template>-->
+    <!--        </tr>-->
+    <!--    </thead>-->
+    <!--    <tbody class="month-week-body">-->
+    <!--        <template v-for="(week, index) in weeks">-->
+    <!--            <tr :key="index">-->
+    <!--                <template v-for="{year, month, day, disabled, muted, isToday, isSelected} in week">-->
+    <!--                    <td-->
+    <!--                        :key="`${year}_${month}_${day}`"-->
+    <!--                        class="p-1 text-center align-middle"-->
+    <!--                    >-->
+    <!--                        <button-->
+    <!--                            class="btn w-100 px-1 py-0"-->
+    <!--                            :disabled="disabled"-->
+    <!--                            :class="dayButtonClassName(muted, isToday, isSelected)"-->
+    <!--                            @click="selectDay(year, month, day)"-->
+    <!--                        >-->
+    <!--                            {{ day }}-->
+    <!--                        </button>-->
+    <!--                    </td>-->
+    <!--                </template>-->
+    <!--            </tr>-->
+    <!--        </template>-->
+    <!--    </tbody>-->
+    <!--</table>-->
 </template>
 
 <script>
@@ -148,6 +183,28 @@
             isSelected(year, month, day) {
                 return new Formatter(year, month, day).toDateString() === new Formatter(this.selectedYear, this.selectedMonth, this.selectedDay).toDateString();
             },
+            dayButtonClassName(muted, isToday, isSelected) {
+                if (isSelected) {
+                    return 'btn-primary';
+                }
+
+                if (muted) {
+                    return 'vue2-datetime-week-day-button text-muted';
+                }
+
+                if (isToday) {
+                    return 'btn-outline-primary';
+                }
+
+                return 'vue2-datetime-week-day-button';
+                //return {
+                //    'text-muted font-weight-light': muted,
+                //    'btn-outline-primary': isToday && !isSelected,
+                //    'btn-primary': isSelected && !muted,
+                //    'btn-white': !isSelected,
+                //    'btn-light font-weight-bold': isSelected && muted
+                //};
+            }
         },
     };
 </script>

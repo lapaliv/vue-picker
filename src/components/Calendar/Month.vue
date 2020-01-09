@@ -1,20 +1,20 @@
 <template>
-    <div class="month">
-        <div class="month-header">
+    <div class="vue2-datetime-month">
+        <div class="vue2-datetime-month-header">
             <button
-                class="btn btn-link text-black-50"
+                class="btn btn-link"
                 @click="prevMonth"
             >
                 <ChevronLeftSolid
                     style="width: 7px;"
                 />
             </button>
-            <div class="month-header-text-container">
-                <button class="btn btn-link px-1 text-black font-weight-600">{{ monthName }}</button>
-                <button class="btn btn-link px-1 text-black font-weight-600">{{ year }}</button>
+            <div class="vue2-datetime-month-header-text-container">
+                <button class="btn btn-link">{{ monthName }}</button>
+                <button class="btn btn-link">{{ year }}</button>
             </div>
             <button
-                class="btn btn-link text-black-50"
+                class="btn btn-link"
                 @click="nextMonth"
             >
                 <ChevronRightSolid
@@ -22,7 +22,7 @@
                 />
             </button>
         </div>
-        <div class="px-2 pt-1">
+        <div class="vue2-datetime-month-body">
             <Weeks
                 :month="month"
                 :year="year"

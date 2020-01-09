@@ -1,5 +1,5 @@
 <template>
-    <div class="vue2-datetime-input">
+    <div class="vue2-datetime w-100">
 
         {{ resultDate }}
         <div class="input-group">
@@ -14,7 +14,10 @@
                 </span>
             </div>
         </div>
-        <div class="calendar" tabindex="1">
+        <div
+            class="vue2-datetime-calendar"
+            tabindex="0"
+        >
             <Month
                 :year="shownYear"
                 :month="shownMonth"
@@ -24,20 +27,10 @@
                 @select="selectDay"
                 @show="showDate"
             />
-            <div class="calendar-footer mt-1">
-                <div class="flex-grow-1 text-center">
-                    <!--<button class="btn btn-link">-->
-                    <!--    <CalendarAltSolid style="width: 12px;"/>-->
-                    <!--</button>-->
-                    <button class="btn btn-link">
-                        Today
-                    </button>
-                </div>
-                <!--<div>-->
-                    <button class="btn btn-link" v-if="false">
-                        <TrashSolid/>
-                    </button>
-                <!--</div>-->
+            <div class="vue2-datetime-calendar-footer">
+                <button class="btn btn-link">
+                    Today
+                </button>
             </div>
         </div>
     </div>
@@ -46,12 +39,11 @@
 <script>
     import Month from './Calendar/Month';
     import CalendarAltSolid from 'src/components/FontAwesome/CalendarAltSolid';
-    import TrashSolid from 'src/components/FontAwesome/TrashSolid';
     import {Formatter} from 'src/utils/formatter';
 
     export default {
         name: 'Calendar',
-        components: {TrashSolid, CalendarAltSolid, Month},
+        components: {CalendarAltSolid, Month},
         data() {
             return {
                 shownYear: null,
