@@ -8,7 +8,7 @@
         role="img"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 320 512"
-        style="width: 11px;"
+        :style="styles"
     >
         <path
             fill="currentColor"
@@ -19,6 +19,19 @@
 
 <script>
     export default {
-        name: 'ChevronLeftSolid'
+        name: 'ChevronLeftSolid',
+        props: {
+            width: {
+                type: Number,
+                default: 11,
+            },
+        },
+        computed: {
+            styles() {
+                return {
+                    width: this.width,
+                };
+            },
+        },
     };
 </script>

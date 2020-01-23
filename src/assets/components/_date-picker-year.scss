@@ -1,0 +1,15 @@
+.date-time-picker .date-picker-year {
+  display: flex;
+  flex-direction: column;
+  padding: 7px;
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__item {
+    width: calc(100% / 3);
+    padding: 0.75rem 0;
+  }
+}

@@ -127,11 +127,13 @@ export class FormatterBuilder {
     }
 
     Y() {
-        return this.formatter.year;
+        const abs = Math.abs(this.formatter.year);
+        const result = `0000${abs}`.slice(-4);
+        return (this.formatter.year < 0 ? '-' : '') + result;
     }
 
     y() {
-        return `${this.formatter.year}`.slice(-2);
+        return `00${this.formatter.year}`.slice(-2);
     }
 
     a() {

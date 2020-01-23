@@ -39,7 +39,13 @@ export class FormatterParser {
                 if (target === null) {
                     throw new Error('Date format is not correct');
                 }
+            } else {
+                target = target.slice(1);
             }
+        }
+
+        if (target || !this.isValidDate()) {
+            throw new Error('Date format is not correct');
         }
 
         this._length = originalTarget.length - (target || originalTarget).length;
@@ -47,9 +53,9 @@ export class FormatterParser {
     }
 
     d(target) {
-        if (target.match(/^[0-9]{2}/)) {
+        if (target.match(/^(0[1-9]|[1-2][0-9]|3[0-1])/)) {
             this._day = parseInt(target.slice(0, 2));
-            return target.slice(0, 2);
+            return target.slice(2);
         }
 
         return null;
@@ -61,7 +67,7 @@ export class FormatterParser {
 
         if (match) {
             this._dayOfWeek = SHORT_DAYS.indexOf(pascalCase(match[1]));
-            return target.slice(0, match[1].length);
+            return target.slice(match[1].length);
         }
 
         return null;
@@ -70,10 +76,10 @@ export class FormatterParser {
     j(target) {
         if (target.match(/^([1-2][0-9]|3[0-1])/)) {
             this._day = parseInt(target.slice(0, 2));
-            return target.slice(0, 2);
+            return target.slice(2);
         } else if (target.match(/^[0-9]/)) {
             this._day = parseInt(target.slice(0, 1));
-            return target.slice(0, 1);
+            return target.slice(1);
         }
 
         return null;
@@ -85,7 +91,7 @@ export class FormatterParser {
 
         if (match) {
             this._dayOfWeek = DAYS.indexOf(pascalCase(match[1]));
-            return target.slice(0, match[1].length);
+            return target.slice(match[1].length);
         }
 
         return null;
@@ -96,7 +102,7 @@ export class FormatterParser {
 
         if (match) {
             this._dayOfWeek = parseInt(match[1]) - 1;
-            return target.slice(0, 1);
+            return target.slice(1);
         }
 
         return null;
@@ -105,7 +111,7 @@ export class FormatterParser {
     S(target) {
         if (target.match(/^(st|nd|rd|th)/)) {
             // todo
-            return target.slice(0, 2);
+            return target.slice(2);
         }
 
         return null;
@@ -116,7 +122,7 @@ export class FormatterParser {
 
         if (match) {
             this._dayOfWeek = parseInt(match[1]);
-            return target.slice(0, 1);
+            return target.slice(1);
         }
 
         return null;
@@ -134,7 +140,7 @@ export class FormatterParser {
 
             if (match) {
                 this._dayOfYear = parseInt(match[1]);
-                return target.slice(0, match[1].length);
+                return target.slice(match[1].length);
             }
         }
 
@@ -151,7 +157,7 @@ export class FormatterParser {
             const match = target.match(regexp);
             if (match) {
                 this._weekOfYear = parseInt(match[1]);
-                return target.slice(0, match[1].length);
+                return target.slice(match[1].length);
             }
         }
 
@@ -164,7 +170,7 @@ export class FormatterParser {
 
         if (match) {
             this._month = MONTHS.indexOf(pascalCase(match[1]));
-            return target.slice(0, match[1].length);
+            return target.slice(match[1].length);
         }
 
         return null;
@@ -174,8 +180,8 @@ export class FormatterParser {
         const match = target.match(/^(0[1-9]|1[0-2])/);
 
         if (match) {
-            this._month = parseInt(match[1]);
-            return target.slice(0, match[1].length);
+            this._month = parseInt(match[0]) - 1;
+            return target.slice(match[0].length);
         }
 
         return null;
@@ -187,7 +193,7 @@ export class FormatterParser {
 
         if (match.length) {
             this._month = SHORT_MONTHS.indexOf(pascalCase(match[1]));
-            return target.slice(0, match[1].length);
+            return target.slice(match[1].length);
         }
 
         return null;
@@ -200,7 +206,7 @@ export class FormatterParser {
             const match = target.match(regexp);
             if (match) {
                 this._month = parseInt(match[1]);
-                return target.slice(0, match[1].length);
+                return target.slice(match[1].length);
             }
         }
 
@@ -214,7 +220,7 @@ export class FormatterParser {
             const match = target.match(regexp);
             if (match) {
                 this._month = parseInt(match[1]);
-                return target.slice(0, match[1]);
+                return target.slice(match[1]);
             }
         }
 
@@ -227,7 +233,7 @@ export class FormatterParser {
         if (match) {
             this._leap = !!parseInt(match[1]);
 
-            return target.slice(0, 1);
+            return target.slice(1);
         }
 
         return null;
@@ -238,22 +244,22 @@ export class FormatterParser {
     }
 
     Y(target) {
-        const match = target.match(/^[0-9]{4}/);
+        const match = target.match(/^-?[0-9]{4}/);
 
         if (match) {
-            this._year = parseInt(match[1]);
-            return target.slice(0, match[1].length);
+            this._year = parseInt(match[0]);
+            return target.slice(match[0].length);
         }
 
         return null;
     }
 
     y(target) {
-        const match = target.match(/^[0-9]{2}/);
+        const match = target.match(/^-?[0-9]{2}/);
 
         if (match) {
             this._year = parseInt(match[1]);
-            return target.slice(0, match[1].length);
+            return target.slice(match[1].length);
         }
 
         return null;
@@ -264,7 +270,7 @@ export class FormatterParser {
 
         if (match) {
             this._am = match[1].toLowerCase() === 'am';
-            return target.slice(0, match[1].length);
+            return target.slice(match[1].length);
         }
 
         return null;
@@ -279,7 +285,7 @@ export class FormatterParser {
 
         if (match) {
             this._internetTime = parseInt(match[1]);
-            return target.slice(0, match[1].length);
+            return target.slice(match[1].length);
         }
 
         return null;
@@ -295,7 +301,7 @@ export class FormatterParser {
             const match = target.match(regexp);
             if (match) {
                 this._divideHours = parseInt(match[1]);
-                return target.slice(0, match[1].length);
+                return target.slice(match[1].length);
             }
         }
 
@@ -312,7 +318,7 @@ export class FormatterParser {
             const match = target.match(regexp);
             if (match) {
                 this._hours = parseInt(match[1]);
-                return target.slice(0, match[1].length);
+                return target.slice(match[1].length);
             }
         }
 
@@ -322,7 +328,7 @@ export class FormatterParser {
     h(target) {
         if (target.match(/^(0[0-9]|1[0-2])/)) {
             this._hours = parseInt(target.slice(0, 2));
-            return target.slice(0, 2);
+            return target.slice(2);
         }
 
         return null;
@@ -331,7 +337,7 @@ export class FormatterParser {
     H(target) {
         if (target.match(/^([0-1][0-9]|2[0-3])/)) {
             this._hours = parseInt(target.slice(0, 2));
-            return target.slice(0, 2);
+            return target.slice(2);
         }
 
         return null;
@@ -340,7 +346,7 @@ export class FormatterParser {
     i(target) {
         if (target.match(/^([0-5][0-9])/)) {
             this._minutes = parseInt(target.slice(0, 2));
-            return target.slice(0, 2);
+            return target.slice(2);
         }
 
         return null;
@@ -349,7 +355,7 @@ export class FormatterParser {
     s(target) {
         if (target.match(/^([0-5][0-9])/)) {
             this._seconds = parseInt(target.slice(0, 2));
-            return target.slice(0, 2);
+            return target.slice(2);
         }
 
         return null;
@@ -358,7 +364,7 @@ export class FormatterParser {
     u(target) {
         if (target.match(/^([0-9]{6})/)) {
             this._microseconds = parseInt(target.slice(0, 6));
-            return target.slice(0, 6);
+            return target.slice(6);
         }
 
         return null;
@@ -367,7 +373,7 @@ export class FormatterParser {
     v(target) {
         if (target.match(/^([0-9]{3})/)) {
             this._microseconds = parseInt(target.slice(0, 3) + '000');
-            return target.slice(0, 3);
+            return target.slice(3);
         }
 
         return null;
@@ -378,7 +384,7 @@ export class FormatterParser {
 
         if (match) {
             this._offsetSeconds = parseInt(match[1]) * 60 + parseInt(match[2]);
-            return target.slice(0, 5);
+            return target.slice(5);
         }
 
         return null;
@@ -389,7 +395,7 @@ export class FormatterParser {
 
         if (match) {
             this._offsetSeconds = parseInt(match[1]) * 60 + parseInt(match[2]);
-            return target.slice(0, 5);
+            return target.slice(5);
         }
 
         return null;
@@ -416,7 +422,7 @@ export class FormatterParser {
             this._seconds = date.getSeconds();
             this._microseconds = 0;
 
-            return target.slice(0, match[1].length);
+            return target.slice(match[1].length);
         }
 
         return null;
@@ -435,7 +441,7 @@ export class FormatterParser {
             this._seconds = parseResult.seconds;
             this._timezone = parseResult.timezone || this._timezone;
 
-            return target.slice(0, parser._length);
+            return target.slice(parser._length);
         } catch (e) {
             return null;
         }
@@ -487,5 +493,13 @@ export class FormatterParser {
             microseconds: this._microseconds,
             timezone: this._timezone,
         };
+    }
+
+    isValidDate() {
+        const date = new Date(this._year, this._month, this._day);
+
+        return date.getFullYear() === this._year
+            && date.getMonth() === this._month
+            && date.getDate() === this._day;
     }
 }

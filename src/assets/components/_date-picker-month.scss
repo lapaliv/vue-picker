@@ -1,0 +1,39 @@
+.date-time-picker .date-picker-month {
+  padding: 7px;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &-item {
+      width: calc(100% / 7);
+      font-weight: bold;
+      text-align: center;
+      padding: 7px 0;
+      cursor: default;
+    }
+  }
+
+  &__week {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &-day {
+      width: calc(100% / 7);
+      font-weight: bold;
+      text-align: center;
+      padding: 0.1rem;
+    }
+  }
+
+  &__footer {
+    padding: map_get($spacers, 1) map_get($spacers, 3);
+    text-align: center;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

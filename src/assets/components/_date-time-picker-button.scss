@@ -1,0 +1,20 @@
+.date-time-picker .date-time-picker-button {
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+
+  &.btn-light:not(:hover) {
+    background: transparent;
+  }
+
+  &.btn-light {
+    border: 1px solid transparent;
+  }
+
+  &--muted {
+    color: lighten($secondary, 20%);
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+}

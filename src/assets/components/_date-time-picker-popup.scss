@@ -1,15 +1,13 @@
-.vue2-datetime-calendar {
+.date-time-picker .date-time-picker-popup {
   background: $white;
   border: $border-width solid $border-color;
   box-shadow: $box-shadow;
   border-radius: $border-radius-lg;
   position: absolute;
   margin-top: map_get($spacers, 1);
-  width: 332px;
+  width: 300px;
 
-  &-footer {
-    padding: map_get($spacers, 1) map_get($spacers, 3);
-    text-align: center;
-    margin-top: map_get($spacers, 1);
+  &:focus {
+    outline: none;
   }
 }

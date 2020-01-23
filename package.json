@@ -1,7 +1,25 @@
 {
-  "name": "calendar",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vue_datetime_picker",
+  "description": "Date time picker (vue.js + bootstrap without jQuery)",
+  "keywords": [
+    "vue",
+    "vue.js",
+    "vue.js 2",
+    "vue2",
+    "bootstrap",
+    "bootstrap4",
+    "date",
+    "datepicker",
+    "timepicker",
+    "datetimepicker",
+    "calendar"
+  ],
+  "version": "0.1.0-alpha",
+  "private": false,
+  "author": {
+    "email": "lapaliv@gmail.com",
+    "name": "Lapin Alex"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -9,6 +27,7 @@
   },
   "dependencies": {
     "core-js": "^3.4.3",
+    "lodash": "^4.17.15",
     "moment": "^2.24.0",
     "sass-loader": "^8.0.0",
     "vue": "^2.6.10"
