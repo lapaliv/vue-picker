@@ -1,0 +1,7 @@
+public/
+src/App.vue
+src/main.js
+src/assets
+
+.gitignore
+vue.config.js

@@ -25,9 +25,9 @@
 </template>
 
 <script>
-    import {Formatter} from 'src/utils/formatter';
-    import DateTimePickerInput from 'src/components/DateTimePickerInput';
-    import DatePicker from 'src/components/DatePicker';
+    import {Formatter} from '@lapaliv/vue-picker/src/utils/formatter';
+    import DateTimePickerInput from '@lapaliv/vue-picker/src/components/DateTimePickerInput';
+    import DatePicker from '@lapaliv/vue-picker/src/components/DatePicker';
 
     export default {
         name: 'DateTimePicker',

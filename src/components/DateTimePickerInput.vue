@@ -25,7 +25,7 @@
 </template>
 
 <script>
-    import CalendarAltSolid from 'src/components/FontAwesome/CalendarAltSolid';
+    import CalendarAltSolid from '@lapaliv/vue-picker/src/components/FontAwesome/CalendarAltSolid';
 
     export default {
         name: 'DateTimePickerInput',

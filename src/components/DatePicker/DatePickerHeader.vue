@@ -47,10 +47,10 @@
 </template>
 
 <script>
-    import ChevronRightSolid from 'src/components/FontAwesome/ChevronRightSolid';
-    import ChevronLeftSolid from 'src/components/FontAwesome/ChevronLeftSolid';
-    import {DATE_PICKER_TYPES} from 'src/consts';
-    import {SHORT_MONTHS} from 'src/consts';
+    import ChevronRightSolid from '@lapaliv/vue-picker/src/components/FontAwesome/ChevronRightSolid';
+    import ChevronLeftSolid from '@lapaliv/vue-picker/src/components/FontAwesome/ChevronLeftSolid';
+    import {DATE_PICKER_TYPES} from '@lapaliv/vue-picker/src/consts';
+    import {SHORT_MONTHS} from '@lapaliv/vue-picker/src/consts';
 
     export default {
         name: 'DatePickerHeader',

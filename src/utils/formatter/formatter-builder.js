@@ -1,9 +1,9 @@
-import {SHORT_DAYS} from 'src/consts';
-import {DAYS} from 'src/consts';
-import {MONTHS} from 'src/consts';
-import {SHORT_MONTHS} from 'src/consts';
-import {count_days_in_months} from 'src/utils/count-days-in-months';
-import {day_on_first_week_in_year} from 'src/utils/day-on-first-week-in-year';
+import {SHORT_DAYS} from '@lapaliv/vue-picker/src/consts';
+import {DAYS} from '@lapaliv/vue-picker/src/consts';
+import {MONTHS} from '@lapaliv/vue-picker/src/consts';
+import {SHORT_MONTHS} from '@lapaliv/vue-picker/src/consts';
+import {count_days_in_months} from '@lapaliv/vue-picker/src/utils/count-days-in-months';
+import {day_on_first_week_in_year} from '@lapaliv/vue-picker/src/utils/day-on-first-week-in-year';
 
 export class FormatterBuilder {
     constructor(formatter) {

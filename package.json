@@ -15,13 +15,15 @@
     "datetimepicker",
     "calendar"
   ],
-  "version": "0.1.4-alpha",
+  "version": "0.1.5-alpha",
   "private": false,
   "main": "index.js",
   "author": {
     "email": "lapaliv@gmail.com",
     "name": "Lapin Alex"
   },
+  "license": "MIT",
+  "homepage": "https://github.com/lapaliv/vue-picker",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -63,5 +65,9 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
+  ],
+  "files": [
+    "src",
+    "index.js"
   ]
 }

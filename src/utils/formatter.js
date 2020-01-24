@@ -1,6 +1,6 @@
-import {FormatterParser} from 'src/utils/formatter/formatter-parser';
-import {is_leap_year} from 'src/utils/is-leap-year';
-import {FormatterBuilder} from 'src/utils/formatter/formatter-builder';
+import {FormatterParser} from '@lapaliv/vue-picker/src/utils/formatter/formatter-parser';
+import {is_leap_year} from '@lapaliv/vue-picker/src/utils/is-leap-year';
+import {FormatterBuilder} from '@lapaliv/vue-picker/src/utils/formatter/formatter-builder';
 
 export class Formatter {
     _year = null;
