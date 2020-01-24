@@ -6,6 +6,7 @@
   position: absolute;
   margin-top: $spacer-1;
   width: 300px;
+  z-index: 10;
 
   &:focus {
     outline: none;

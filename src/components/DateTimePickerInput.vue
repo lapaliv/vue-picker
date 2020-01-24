@@ -1,15 +1,21 @@
 <template>
     <div
-        v-if="showIcon"
+        v-if="showIconPrepend || showIconAppend"
         class="input-group"
     >
+        <div v-if="showIconPrepend" class="input-group-prepend">
+            <span class="input-group-text">
+                <CalendarAltSolid/>
+            </span>
+        </div>
         <input
             type="text"
             class="form-control"
             v-model="model"
+            :placeholder="placeholder"
             @focus="focus"
         />
-        <div class="input-group-append">
+        <div v-if="showIconAppend" class="input-group-append">
             <span class="input-group-text">
                 <CalendarAltSolid/>
             </span>
@@ -19,6 +25,7 @@
         v-else
         type="text"
         class="form-control"
+        :placeholder="placeholder"
         v-model="model"
         @focus="focus"
     />
@@ -35,9 +42,16 @@
                 type: null,
                 required: true,
             },
-            showIcon: {
+            showIconPrepend: {
                 type: Boolean,
                 default: true,
+            },
+            showIconAppend: {
+                type: Boolean,
+                default: true,
+            },
+            placeholder: {
+                default: null,
             },
         },
         computed: {

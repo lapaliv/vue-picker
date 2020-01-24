@@ -3,6 +3,7 @@
         <DateTimePickerInput
             v-model="printDate"
             :show-icon="showIcon"
+            :placeholder="placeholder"
             @focus="showPicker"
             @blur="hidePicker"
         />
@@ -33,7 +34,11 @@
         name: 'DateTimePicker',
         components: {DatePicker, DateTimePickerInput},
         props: {
-            showIcon: {
+            showIconPrepend: {
+                type: Boolean,
+                default: true,
+            },
+            showIconAppend: {
                 type: Boolean,
                 default: true,
             },
@@ -45,6 +50,9 @@
                 default: 'Y-m-d',
             },
             printFormat: {
+                default: null,
+            },
+            placeholder: {
                 default: null,
             },
         },
