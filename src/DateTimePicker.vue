@@ -56,7 +56,7 @@
             },
             showIconAppend: {
                 type: Boolean,
-                default: true,
+                default: false,
             },
             value: {
                 required: false,

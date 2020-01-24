@@ -54,11 +54,11 @@
             },
             showIconPrepend: {
                 type: Boolean,
-                default: false,
+                required: true,
             },
             showIconAppend: {
                 type: Boolean,
-                default: true,
+                required: true,
             },
             placeholder: {
                 default: null,
