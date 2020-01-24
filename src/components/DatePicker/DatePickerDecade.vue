@@ -11,6 +11,7 @@
                         class="date-picker-decade__item"
                     >
                         <button
+                            type="button"
                             class="btn date-time-picker-button"
                             :class="className(year)"
                             @click="select(year)"

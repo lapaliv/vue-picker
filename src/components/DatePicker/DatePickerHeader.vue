@@ -1,6 +1,7 @@
 <template>
     <div class="date-picker-header">
         <button
+            type="button"
             class="btn btn-light"
             @click="previous"
         >
@@ -12,6 +13,7 @@
                 class="flex-fill text-right"
             >
                 <button
+                    type="button"
                     class="btn btn-link pr-1"
                     @click="showYear"
                 >
@@ -24,6 +26,7 @@
                 :class="{'text-left': isShowMonthName}"
             >
                 <button
+                    type="button"
                     class="btn btn-link"
                     :class="{'pl-1': isShowMonthName}"
                     @click="showDecade"
@@ -36,6 +39,7 @@
                 class="flex-fill"
             >
                 <button
+                    type="button"
                     class="btn btn-link"
                     @click="showCentury"
                 >
@@ -47,6 +51,7 @@
                 class="flex-fill"
             >
                 <button
+                    type="button"
                     class="btn"
                     disabled
                 >
@@ -55,6 +60,7 @@
             </div>
         </div>
         <button
+            type="button"
             class="btn btn-light"
             @click="next"
         >

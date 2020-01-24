@@ -11,6 +11,7 @@
                         class="date-picker-century__item"
                     >
                         <button
+                            type="button"
                             :class="className(decade.startYearOfDecade, decade.finishYearOfDecade)"
                             class="btn date-time-picker-button"
                             @click="select(decade.startYearOfDecade, decade.finishYearOfDecade)"

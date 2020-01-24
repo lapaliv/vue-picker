@@ -37,7 +37,10 @@
             class="date-picker-month__footer"
             @click="selectToday"
         >
-            <button class="btn btn-link">
+            <button
+                type="button"
+                class="btn btn-link"
+            >
                 Today
             </button>
         </div>

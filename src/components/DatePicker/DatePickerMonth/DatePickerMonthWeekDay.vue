@@ -1,6 +1,7 @@
 <template>
     <div class="date-picker-month__week-day">
         <button
+            type="button"
             class="btn date-time-picker-button"
             :class="className"
             @click="select"
