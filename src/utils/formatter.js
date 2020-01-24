@@ -3,15 +3,6 @@ import {is_leap_year} from '@lapaliv/vue-picker/src/utils/is-leap-year';
 import {FormatterBuilder} from '@lapaliv/vue-picker/src/utils/formatter/formatter-builder';
 
 export class Formatter {
-    _year = null;
-    _month = null;
-    _day = null;
-    _hours = null;
-    _minutes = null;
-    _seconds = null;
-    _microseconds = null;
-    _timezone = null;
-
     constructor(year, month, day, hours, minutes, seconds, microseconds, timezone) {
         this._year = typeof year === 'number' ? year : null;
         this._month = typeof month === 'number' ? month : null;

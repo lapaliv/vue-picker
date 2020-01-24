@@ -8,27 +8,28 @@ import {is_leap_year} from '@lapaliv/vue-picker/src/utils/is-leap-year';
 import {day_on_first_week_in_year} from '@lapaliv/vue-picker/src/utils/day-on-first-week-in-year';
 
 export class FormatterParser {
-    _year = null;
-    _month = null;
-    _day = null;
-    _hours = null;
-    _minutes = null;
-    _seconds = null;
-    _microseconds = null;
-    _timezone = null;
-
-    _dayOfWeek = null;
-    _dayOfYear = null;
-    _weekOfYear = null;
-    _leap = null;
-    _am = null;
-    _internetTime = null;
-    _divideHours = null;
-    _offsetSeconds = null;
-
-    _length = 0;
-
     constructor(format, target) {
+        this._year = null;
+        this._month = null;
+        this._day = null;
+        this._hours = null;
+        this._minutes = null;
+        this._seconds = null;
+        this._microseconds = null;
+        this._timezone = null;
+
+        this._dayOfWeek = null;
+        this._dayOfYear = null;
+        this._weekOfYear = null;
+        this._leap = null;
+        this._am = null;
+        this._internetTime = null;
+        this._divideHours = null;
+        this._offsetSeconds = null;
+
+        this._length = 0;
+
+
         const symbols = format.match(/\\?./g);
         const originalTarget = target;
 

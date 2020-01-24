@@ -15,7 +15,7 @@
     "datetimepicker",
     "calendar"
   ],
-  "version": "0.1.5-alpha",
+  "version": "0.1.6-alpha",
   "private": false,
   "main": "index.js",
   "author": {
