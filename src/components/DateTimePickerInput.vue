@@ -20,16 +20,20 @@
             :placeholder="placeholder"
             @focus="focus"
         />
-        <slot name="append">
-            <div
-                v-if="showIconAppend"
-                class="input-group-append"
-            >
-                <span class="input-group-text">
+
+        <div
+            v-if="showIconAppend || $slots.append"
+            class="input-group-append"
+        >
+            <slot name="append">
+                <span
+                    v-if="showIconAppend"
+                    class="input-group-text"
+                >
                     <CalendarAltSolid/>
                 </span>
-            </div>
-        </slot>
+            </slot>
+        </div>
     </div>
     <input
         v-else
