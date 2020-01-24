@@ -1,12 +1,28 @@
 <template>
     <div class="date-time-picker">
-        <DateTimePickerInput
-            v-model="printDate"
-            :show-icon="showIcon"
-            :placeholder="placeholder"
-            @focus="showPicker"
-            @blur="hidePicker"
-        />
+        <slot name="input">
+            <DateTimePickerInput
+                v-model="printDate"
+                :show-icon-prepend="showIconPrepend"
+                :show-icon-append="showIconAppend"
+                :placeholder="placeholder"
+                @focus="showPicker"
+            >
+                <template
+                    v-if="$slots['input-prepend']"
+                    v-slot:prepend
+                >
+                    <slot name="input-prepend"/>
+                </template>
+
+                <template
+                    v-if="$slots['input-append']"
+                    v-slot:append
+                >
+                    <slot name="input-append"/>
+                </template>
+            </DateTimePickerInput>
+        </slot>
         <div
             v-if="isShowPicker"
             class="date-time-picker-popup"
@@ -36,7 +52,7 @@
         props: {
             showIconPrepend: {
                 type: Boolean,
-                default: true,
+                default: false,
             },
             showIconAppend: {
                 type: Boolean,

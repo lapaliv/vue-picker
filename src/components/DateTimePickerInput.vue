@@ -3,11 +3,16 @@
         v-if="showIconPrepend || showIconAppend"
         class="input-group"
     >
-        <div v-if="showIconPrepend" class="input-group-prepend">
-            <span class="input-group-text">
-                <CalendarAltSolid/>
-            </span>
-        </div>
+        <slot name="prepend">
+            <div
+                v-if="showIconPrepend"
+                class="input-group-prepend"
+            >
+                <span class="input-group-text">
+                    <CalendarAltSolid/>
+                </span>
+            </div>
+        </slot>
         <input
             type="text"
             class="form-control"
@@ -15,11 +20,16 @@
             :placeholder="placeholder"
             @focus="focus"
         />
-        <div v-if="showIconAppend" class="input-group-append">
-            <span class="input-group-text">
-                <CalendarAltSolid/>
-            </span>
-        </div>
+        <slot name="append">
+            <div
+                v-if="showIconAppend"
+                class="input-group-append"
+            >
+                <span class="input-group-text">
+                    <CalendarAltSolid/>
+                </span>
+            </div>
+        </slot>
     </div>
     <input
         v-else
@@ -44,7 +54,7 @@
             },
             showIconPrepend: {
                 type: Boolean,
-                default: true,
+                default: false,
             },
             showIconAppend: {
                 type: Boolean,

@@ -7,35 +7,52 @@
             <ChevronLeftSolid :width="7"/>
         </button>
         <div class="date-picker-header__container">
-            <button
+            <div
                 v-if="isShowMonthName"
-                class="btn btn-link pr-1 text-right"
-                @click="showYear"
+                class="flex-fill text-right"
             >
-                {{ monthName }}
-            </button>
-            <button
+                <button
+                    class="btn btn-link pr-1"
+                    @click="showYear"
+                >
+                    {{ monthName }}
+                </button>
+            </div>
+            <div
                 v-if="isShowYear"
-                class="btn btn-link"
-                :class="{'pl-1 text-left': isShowMonthName}"
-                @click="showDecade"
+                class="flex-fill"
+                :class="{'text-left': isShowMonthName}"
             >
-                {{ shownYear }}
-            </button>
-            <button
+                <button
+                    class="btn btn-link"
+                    :class="{'pl-1': isShowMonthName}"
+                    @click="showDecade"
+                >
+                    {{ shownYear }}
+                </button>
+            </div>
+            <div
                 v-if="isShowDecade"
-                class="btn btn-link"
-                @click="showCentury"
+                class="flex-fill"
             >
-                {{ decadeStartYear }} - {{ decadeFinishYear }}
-            </button>
-            <button
+                <button
+                    class="btn btn-link"
+                    @click="showCentury"
+                >
+                    {{ decadeStartYear }} - {{ decadeFinishYear }}
+                </button>
+            </div>
+            <div
                 v-if="isShowCentury"
-                class="btn"
-                disabled
+                class="flex-fill"
             >
-                {{ centuryStartYear }} - {{ centuryFinishYear }}
-            </button>
+                <button
+                    class="btn"
+                    disabled
+                >
+                    {{ centuryStartYear }} - {{ centuryFinishYear }}
+                </button>
+            </div>
         </div>
         <button
             class="btn btn-light"
@@ -95,7 +112,7 @@
                 return this.type === DATE_PICKER_TYPES.DECADE;
             },
             centuryStartYear() {
-                if(this.shownYear >= 0) {
+                if (this.shownYear >= 0) {
                     return this.shownYear - this.shownYear % 100;
                 }
 
