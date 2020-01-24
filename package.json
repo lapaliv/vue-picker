@@ -1,5 +1,5 @@
 {
-  "name": "vue-datetime-picker",
+  "name": "@lapaliv/vue-picker",
   "description": "Date time picker (vue.js + bootstrap without jQuery)",
   "keywords": [
     "vue",
@@ -15,7 +15,7 @@
     "datetimepicker",
     "calendar"
   ],
-  "version": "0.1.2-alpha",
+  "version": "0.1.3-alpha",
   "private": false,
   "main": "index.js",
   "author": {
