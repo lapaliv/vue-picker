@@ -30,8 +30,10 @@
 </template>
 
 <script>
-    import './assets/dev.scss';
-    import DateTimePicker from 'src/components/DateTimePicker';
+    import "bootstrap/scss/bootstrap.scss";
+    import 'src/assets/date-time-picker.scss';
+
+    import DateTimePicker from 'src/DateTimePicker';
 
     export default {
         name: 'app',

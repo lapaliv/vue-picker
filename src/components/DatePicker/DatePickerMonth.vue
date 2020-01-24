@@ -47,7 +47,7 @@
 <script>
     import {Formatter} from 'src/utils/formatter';
     import {SHORT_DAYS} from 'src/consts';
-    import DatePickerMonthWeekDay from 'src/components/DateTimePicker/DatePicker/DatePickerMonth/DatePickerMonthWeekDay';
+    import DatePickerMonthWeekDay from 'src/components/DatePicker/DatePickerMonth/DatePickerMonthWeekDay';
 
     export default {
         name: 'DatePickerMonth',

@@ -5,10 +5,11 @@
     "vue",
     "vue.js",
     "vue.js 2",
+    "vuejs",
+    "vuejs2",
     "vue2",
     "bootstrap",
     "bootstrap4",
-    "date",
     "datepicker",
     "timepicker",
     "datetimepicker",
@@ -16,6 +17,7 @@
   ],
   "version": "0.1.0-alpha",
   "private": false,
+  "main": "index.js",
   "author": {
     "email": "lapaliv@gmail.com",
     "name": "Lapin Alex"

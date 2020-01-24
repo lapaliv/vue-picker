@@ -26,8 +26,8 @@
 
 <script>
     import {Formatter} from 'src/utils/formatter';
-    import DateTimePickerInput from 'src/components/DateTimePicker/DateTimePickerInput';
-    import DatePicker from 'src/components/DateTimePicker/DatePicker';
+    import DateTimePickerInput from 'src/components/DateTimePickerInput';
+    import DatePicker from 'src/components/DatePicker';
 
     export default {
         name: 'DateTimePicker',

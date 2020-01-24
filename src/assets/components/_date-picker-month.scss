@@ -29,7 +29,7 @@
   }
 
   &__footer {
-    padding: map_get($spacers, 1) map_get($spacers, 3);
+    padding: $spacer-1 $spacer-3;
     text-align: center;
 
     &:focus {

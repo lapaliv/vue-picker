@@ -4,7 +4,7 @@
   box-shadow: $box-shadow;
   border-radius: $border-radius-lg;
   position: absolute;
-  margin-top: map_get($spacers, 1);
+  margin-top: $spacer-1;
   width: 300px;
 
   &:focus {

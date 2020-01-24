@@ -44,12 +44,12 @@
 </template>
 
 <script>
-    import DatePickerMonth from 'src/components/DateTimePicker/DatePicker/DatePickerMonth';
-    import DatePickerCentury from 'src/components/DateTimePicker/DatePicker/DatePickerCentury';
-    import DatePickerDecade from 'src/components/DateTimePicker/DatePicker/DatePickerDecade';
-    import DatePickerYear from 'src/components/DateTimePicker/DatePicker/DatePickerYear';
+    import DatePickerMonth from 'src/components/DatePicker/DatePickerMonth';
+    import DatePickerCentury from 'src/components/DatePicker/DatePickerCentury';
+    import DatePickerDecade from 'src/components/DatePicker/DatePickerDecade';
+    import DatePickerYear from 'src/components/DatePicker/DatePickerYear';
     import {DATE_PICKER_TYPES} from 'src/consts';
-    import DatePickerHeader from 'src/components/DateTimePicker/DatePicker/DatePickerHeader';
+    import DatePickerHeader from 'src/components/DatePicker/DatePickerHeader';
 
     export default {
         name: 'DatePicker',
