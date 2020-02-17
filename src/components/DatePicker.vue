@@ -44,12 +44,12 @@
 </template>
 
 <script>
-    import DatePickerMonth from '@lapaliv/vue-picker/src/components/DatePicker/DatePickerMonth';
-    import DatePickerCentury from '@lapaliv/vue-picker/src/components/DatePicker/DatePickerCentury';
-    import DatePickerDecade from '@lapaliv/vue-picker/src/components/DatePicker/DatePickerDecade';
-    import DatePickerYear from '@lapaliv/vue-picker/src/components/DatePicker/DatePickerYear';
-    import {DATE_PICKER_TYPES} from '@lapaliv/vue-picker/src/consts';
-    import DatePickerHeader from '@lapaliv/vue-picker/src/components/DatePicker/DatePickerHeader';
+    import DatePickerMonth from 'src/components/DatePicker/DatePickerMonth';
+    import DatePickerCentury from 'src/components/DatePicker/DatePickerCentury';
+    import DatePickerDecade from 'src/components/DatePicker/DatePickerDecade';
+    import DatePickerYear from 'src/components/DatePicker/DatePickerYear';
+    import {DATE_PICKER_TYPES} from 'src/consts';
+    import DatePickerHeader from 'src/components/DatePicker/DatePickerHeader';
 
     export default {
         name: 'DatePicker',

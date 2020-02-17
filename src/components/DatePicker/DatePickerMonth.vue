@@ -48,9 +48,9 @@
 </template>
 
 <script>
-    import {Formatter} from '@lapaliv/vue-picker/src/utils/formatter';
-    import {SHORT_DAYS} from '@lapaliv/vue-picker/src/consts';
-    import DatePickerMonthWeekDay from '@lapaliv/vue-picker/src/components/DatePicker/DatePickerMonth/DatePickerMonthWeekDay';
+    import {Formatter} from 'src/utils/formatter';
+    import {SHORT_DAYS} from 'src/consts';
+    import DatePickerMonthWeekDay from 'src/components/DatePicker/DatePickerMonth/DatePickerMonthWeekDay';
 
     export default {
         name: 'DatePickerMonth',

@@ -322,13 +322,6 @@ module.exports = function (METHOD_NAME) {
 
 /***/ }),
 
-/***/ "21b6":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
 /***/ "23cb":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20073,13 +20066,6 @@ module.exports = Object.setPrototypeOf || ('__proto__' in {} ? function () {
 
 /***/ }),
 
-/***/ "d33c":
-/***/ (function(module, exports, __webpack_require__) {
-
-// extracted by mini-css-extract-plugin
-
-/***/ }),
-
 /***/ "d3b7":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -20639,25 +20625,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a8e46aec-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=template&id=db56a058&
-var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"w-50 ml-auto mt-5",attrs:{"id":"app"}},[_c('div',{staticClass:"mb-3"},[_c('strong',[_vm._v(_vm._s(_vm.date))]),(!_vm.dateIsValid)?_c('span',{staticClass:"text-danger"},[_vm._v(" no valid ")]):_c('span',{staticClass:"text-success"},[_vm._v(" valid ")])]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.date),expression:"date"}],staticClass:"form-control mb-3",domProps:{"value":(_vm.date)},on:{"input":function($event){if($event.target.composing){ return; }_vm.date=$event.target.value}}}),_c('DateTimePicker',{attrs:{"print-format":"d.m.Y"},on:{"is-valid":_vm.isValidDate},model:{value:(_vm.date),callback:function ($$v) {_vm.date=$$v},expression:"date"}})],1)}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"05b16931-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/DateTimePicker.vue?vue&type=template&id=d37534fe&
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"date-time-picker"},[_vm._t("input",[_c('DateTimePickerInput',{attrs:{"show-icon-prepend":_vm.showIconPrepend,"show-icon-append":_vm.showIconAppend,"placeholder":_vm.placeholder},on:{"focus":_vm.showPicker},scopedSlots:_vm._u([(_vm.$slots['input-prepend'])?{key:"prepend",fn:function(){return [_vm._t("input-prepend")]},proxy:true}:null,(_vm.$slots['input-append'])?{key:"append",fn:function(){return [_vm._t("input-append")]},proxy:true}:null],null,true),model:{value:(_vm.printDate),callback:function ($$v) {_vm.printDate=$$v},expression:"printDate"}})]),(_vm.isShowPicker)?_c('div',{staticClass:"date-time-picker-popup",attrs:{"tabindex":"0"}},[_c('DatePicker',{attrs:{"year":_vm.shownYear,"month":_vm.shownMonth,"selected-year":_vm.selectedYear,"selected-month":_vm.selectedMonth,"selected-day":_vm.selectedDay},on:{"select":_vm.selectDay,"show":_vm.showDate}})],1):_vm._e()],2)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/App.vue?vue&type=template&id=db56a058&
-
-// EXTERNAL MODULE: ./node_modules/bootstrap/scss/bootstrap.scss
-var bootstrap = __webpack_require__("21b6");
-
-// EXTERNAL MODULE: ./src/scss/date-time-picker.scss
-var date_time_picker = __webpack_require__("d33c");
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a8e46aec-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/DateTimePicker.vue?vue&type=template&id=021f6b76&
-var DateTimePickervue_type_template_id_021f6b76_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"date-time-picker"},[_vm._t("input",[_c('DateTimePickerInput',{attrs:{"show-icon-prepend":_vm.showIconPrepend,"show-icon-append":_vm.showIconAppend,"placeholder":_vm.placeholder},on:{"focus":_vm.showPicker},scopedSlots:_vm._u([(_vm.$slots['input-prepend'])?{key:"prepend",fn:function(){return [_vm._t("input-prepend")]},proxy:true}:null,(_vm.$slots['input-append'])?{key:"append",fn:function(){return [_vm._t("input-append")]},proxy:true}:null],null,true),model:{value:(_vm.printDate),callback:function ($$v) {_vm.printDate=$$v},expression:"printDate"}})]),(_vm.isShowPicker)?_c('DateTimePickerPopup',{attrs:{"shown-year":_vm.shownYear,"shown-month":_vm.shownMonth,"selected-year":_vm.selectedYear,"selected-month":_vm.selectedMonth,"selected-day":_vm.selectedDay},on:{"select":_vm.selectDay,"show":_vm.showDate}}):_vm._e()],2)}
-var DateTimePickervue_type_template_id_021f6b76_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./src/DateTimePicker.vue?vue&type=template&id=021f6b76&
+// CONCATENATED MODULE: ./src/DateTimePicker.vue?vue&type=template&id=d37534fe&
 
 // CONCATENATED MODULE: ./node_modules/@vue/cli-plugin-babel/node_modules/@babel/runtime/helpers/esm/classCallCheck.js
 function _classCallCheck(instance, Constructor) {
@@ -20681,14 +20654,29 @@ function _createClass(Constructor, protoProps, staticProps) {
   if (staticProps) _defineProperties(Constructor, staticProps);
   return Constructor;
 }
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.symbol.js
+var es_symbol = __webpack_require__("a4d3");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.symbol.description.js
+var es_symbol_description = __webpack_require__("e01a");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.symbol.iterator.js
+var es_symbol_iterator = __webpack_require__("d28b");
+
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.index-of.js
 var es_array_index_of = __webpack_require__("c975");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.iterator.js
+var es_array_iterator = __webpack_require__("e260");
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.join.js
 var es_array_join = __webpack_require__("a15b");
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.slice.js
 var es_array_slice = __webpack_require__("fb6a");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.to-string.js
+var es_object_to_string = __webpack_require__("d3b7");
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.constructor.js
 var es_regexp_constructor = __webpack_require__("4d63");
@@ -20699,8 +20687,14 @@ var es_regexp_exec = __webpack_require__("ac1f");
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.regexp.to-string.js
 var es_regexp_to_string = __webpack_require__("25f0");
 
+// EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.iterator.js
+var es_string_iterator = __webpack_require__("3ca3");
+
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.match.js
 var es_string_match = __webpack_require__("466d");
+
+// EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom-collections.iterator.js
+var web_dom_collections_iterator = __webpack_require__("ddb0");
 
 // CONCATENATED MODULE: ./src/consts.js
 var MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -20761,489 +20755,561 @@ function day_on_first_week_in_year(year) {
 
 
 
-var FormatterParser = function FormatterParser(format, target) {
-  this._year = null;
-  this._month = null;
-  this._day = null;
-  this._hours = null;
-  this._minutes = null;
-  this._seconds = null;
-  this._microseconds = null;
-  this._timezone = null;
-  this._dayOfWeek = null;
-  this._dayOfYear = null;
-  this._weekOfYear = null;
-  this._leap = null;
-  this._am = null;
-  this._internetTime = null;
-  this._divideHours = null;
-  this._offsetSeconds = null;
-  this._length = 0;
-  var symbols = format.match(/\\?./g);
-  var originalTarget = target;
 
-  for (var i = 0; i < symbols.length; i++) {
-    var item = symbols[i];
 
-    if (typeof this[item] === 'function' && item.length === 1) {
-      target = this[item](target);
 
-      if (target === null) {
-        throw new Error('Date format is not correct');
+
+
+
+
+
+var formatter_parser_FormatterParser =
+/*#__PURE__*/
+function () {
+  function FormatterParser(format, target) {
+    _classCallCheck(this, FormatterParser);
+
+    this._year = null;
+    this._month = null;
+    this._day = null;
+    this._hours = null;
+    this._minutes = null;
+    this._seconds = null;
+    this._microseconds = null;
+    this._timezone = null;
+    this._dayOfWeek = null;
+    this._dayOfYear = null;
+    this._weekOfYear = null;
+    this._leap = null;
+    this._am = null;
+    this._internetTime = null;
+    this._divideHours = null;
+    this._offsetSeconds = null;
+    this._length = 0;
+    var symbols = format.match(/\\?./g);
+    var originalTarget = target;
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = symbols[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var symbol = _step.value;
+
+        if (typeof this[symbol] === 'function' && symbol.length === 1) {
+          target = this[symbol](target);
+
+          if (target === null) {
+            throw new Error('Date format is not correct');
+          }
+        } else {
+          target = target.slice(1);
+        }
       }
-    } else {
-      target = target.slice(1);
-    }
-  }
-
-  if (target || !this.isValidDate()) {
-    throw new Error('Date format is not correct');
-  }
-
-  this._length = originalTarget.length - (target || originalTarget).length;
-
-  this._compute();
-};
-
-FormatterParser.prototype.d = function (target) {
-  if (target.match(/^(0[1-9]|[1-2][0-9]|3[0-1])/)) {
-    this._day = parseInt(target.slice(0, 2));
-    return target.slice(2);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.D = function (target) {
-  var regexp = new RegExp("^(".concat(SHORT_DAYS.join('|'), ")"), 'i');
-  var match = target.match(regexp);
-
-  if (match) {
-    this._dayOfWeek = SHORT_DAYS.indexOf(pascalCase(match[1]));
-    return target.slice(match[1].length);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.j = function (target) {
-  if (target.match(/^([1-2][0-9]|3[0-1])/)) {
-    this._day = parseInt(target.slice(0, 2));
-    return target.slice(2);
-  } else if (target.match(/^[0-9]/)) {
-    this._day = parseInt(target.slice(0, 1));
-    return target.slice(1);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.l = function (target) {
-  var regexp = new RegExp("^(".concat(DAYS.join('|'), ")"), 'i');
-  var match = target.match(regexp);
-
-  if (match) {
-    this._dayOfWeek = DAYS.indexOf(pascalCase(match[1]));
-    return target.slice(match[1].length);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.N = function (target) {
-  var match = target.match(/^[1-7]/);
-
-  if (match) {
-    this._dayOfWeek = parseInt(match[1]) - 1;
-    return target.slice(1);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.S = function (target) {
-  if (target.match(/^(st|nd|rd|th)/)) {
-    // todo
-    return target.slice(2);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.w = function (target) {
-  var match = target.match(/^[0-6]/);
-
-  if (match) {
-    this._dayOfWeek = parseInt(match[1]);
-    return target.slice(1);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.z = function (target) {
-  var regexps = [/^([1-2][0-9]{2}|3[0-5][0-9]|36[0-5])/, /^([1-9]{2})/, /^([1-9])/];
-
-  for (var i = 0; i < regexps.length; i++) {
-    var regexp = regexps[i];
-    var match = target.match(regexp);
-
-    if (match) {
-      this._dayOfYear = parseInt(match[1]);
-      return target.slice(match[1].length);
-    }
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.W = function (target) {
-  var regexps = [/^([1-4][0-9]|5[0-2])/, /^[0-9]/];
-
-  for (var i = 0; i < regexps.length; i++) {
-    var regexp = regexps[i];
-    var match = target.match(regexp);
-
-    if (match) {
-      this._weekOfYear = parseInt(match[1]);
-      return target.slice(match[1].length);
-    }
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.F = function (target) {
-  var regexp = new RegExp("^(".concat(MONTHS.join('|'), ")"), 'i');
-  var match = target.match(regexp);
-
-  if (match) {
-    this._month = MONTHS.indexOf(pascalCase(match[1]));
-    return target.slice(match[1].length);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.m = function (target) {
-  var match = target.match(/^(0[1-9]|1[0-2])/);
-
-  if (match) {
-    this._month = parseInt(match[0]) - 1;
-    return target.slice(match[0].length);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.M = function (target) {
-  var regexp = new RegExp("^(".concat(SHORT_MONTHS.join('|'), ")"), 'i');
-  var match = target.match(regexp);
-
-  if (match.length) {
-    this._month = SHORT_MONTHS.indexOf(pascalCase(match[1]));
-    return target.slice(match[1].length);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.n = function (target) {
-  var regexps = [/^1[0-2]/, /^[1-9]/];
-
-  for (var i = 0; i < regexps.length; i++) {
-    var regexp = regexps[i];
-    var match = target.match(regexp);
-
-    if (match) {
-      this._month = parseInt(match[1]);
-      return target.slice(match[1].length);
-    }
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.t = function (target) {
-  var regexps = [/^([1-2][0-9]|3[0-1])/, /^[1-9]/];
-
-  for (var i = 0; i < regexps.length; i++) {
-    var regexp = regexps[i];
-    var match = target.match(regexp);
-
-    if (match) {
-      this._month = parseInt(match[1]);
-      return target.slice(match[1]);
-    }
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.L = function (target) {
-  var match = target.match(/^[0-1]/);
-
-  if (match) {
-    this._leap = !!parseInt(match[1]);
-    return target.slice(1);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.o = function (target) {
-  return this.Y(target);
-};
-
-FormatterParser.prototype.Y = function (target) {
-  var match = target.match(/^-?[0-9]{4}/);
-
-  if (match) {
-    this._year = parseInt(match[0]);
-    return target.slice(match[0].length);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.y = function (target) {
-  var match = target.match(/^-?[0-9]{2}/);
-
-  if (match) {
-    this._year = parseInt(match[1]);
-    return target.slice(match[1].length);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.a = function (target) {
-  var match = target.match(/^(am|pm)/i);
-
-  if (match) {
-    this._am = match[1].toLowerCase() === 'am';
-    return target.slice(match[1].length);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.A = function (target) {
-  return this.a(target);
-};
-
-FormatterParser.prototype.B = function (target) {
-  var match = target.match(/^[0-9]{3}/);
-
-  if (match) {
-    this._internetTime = parseInt(match[1]);
-    return target.slice(match[1].length);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.g = function (target) {
-  var regexps = [/^1[0-2]/, /^[0-9]/];
-
-  for (var i = 0; i < regexps.length; i++) {
-    var regexp = regexps[i];
-    var match = target.match(regexp);
-
-    if (match) {
-      this._divideHours = parseInt(match[1]);
-      return target.slice(match[1].length);
-    }
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.G = function (target) {
-  var regexps = [/^(1[0-9]|2[0-3])/, /^[0-9]/];
-
-  for (var i = 0; i < regexps.length; i++) {
-    var regexp = regexps[i];
-    var match = target.match(regexp);
-
-    if (match) {
-      this._hours = parseInt(match[1]);
-      return target.slice(match[1].length);
-    }
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.h = function (target) {
-  if (target.match(/^(0[0-9]|1[0-2])/)) {
-    this._hours = parseInt(target.slice(0, 2));
-    return target.slice(2);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.H = function (target) {
-  if (target.match(/^([0-1][0-9]|2[0-3])/)) {
-    this._hours = parseInt(target.slice(0, 2));
-    return target.slice(2);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.i = function (target) {
-  if (target.match(/^([0-5][0-9])/)) {
-    this._minutes = parseInt(target.slice(0, 2));
-    return target.slice(2);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.s = function (target) {
-  if (target.match(/^([0-5][0-9])/)) {
-    this._seconds = parseInt(target.slice(0, 2));
-    return target.slice(2);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.u = function (target) {
-  if (target.match(/^([0-9]{6})/)) {
-    this._microseconds = parseInt(target.slice(0, 6));
-    return target.slice(6);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.v = function (target) {
-  if (target.match(/^([0-9]{3})/)) {
-    this._microseconds = parseInt(target.slice(0, 3) + '000');
-    return target.slice(3);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.O = function (target) {
-  var match = target.match(/^[-+]([0-1][0-9]|2[0-3])([0-5][0-9])/);
-
-  if (match) {
-    this._offsetSeconds = parseInt(match[1]) * 60 + parseInt(match[2]);
-    return target.slice(5);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.P = function (target) {
-  var match = target.match(/^[-+]([0-1][0-9]|2[0-3]):([0-5][0-9])/);
-
-  if (match) {
-    this._offsetSeconds = parseInt(match[1]) * 60 + parseInt(match[2]);
-    return target.slice(5);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype.c = function (target) {
-  return this._complex('Y-m-d\\TH:i:sP', target);
-};
-
-FormatterParser.prototype.r = function (target) {
-  return this._complex('D, d M Y H:i:s O', target);
-};
-
-FormatterParser.prototype.U = function (target) {
-  var match = target.match(/^(-?[0-9]+)/);
-
-  if (match) {
-    var date = new Date(match[0]);
-    this._year = date.getFullYear();
-    this._month = date.getMonth();
-    this._day = date.getDate();
-    this._hours = date.getHours();
-    this._minutes = date.getMinutes();
-    this._seconds = date.getSeconds();
-    this._microseconds = 0;
-    return target.slice(match[1].length);
-  }
-
-  return null;
-};
-
-FormatterParser.prototype._complex = function (format, target) {
-  try {
-    var parser = new FormatterParser(format, target);
-    var parseResult = parser.toObject();
-    this._year = parseResult.year;
-    this._month = parseResult.month;
-    this._day = parseResult.day;
-    this._hours = parseResult.hours;
-    this._minutes = parseResult.minutes;
-    this._seconds = parseResult.seconds;
-    this._timezone = parseResult.timezone || this._timezone;
-    return target.slice(parser._length);
-  } catch (e) {
-    return null;
-  }
-};
-
-FormatterParser.prototype._compute = function () {
-  if (!this._day) {
-    if (this._weekOfYear && this._dayOfWeek !== null && this._year) {
-      this._dayOfYear = this._weekOfYear * 7 + day_on_first_week_in_year(this._year) + this._dayOfWeek;
-    }
-
-    if (this._dayOfYear && this._year) {
-      var isLeapYear = false; // a leap year
-
-      if (is_leap_year(this._year)) {
-        isLeapYear = true;
-      }
-
-      var countDaysInMonths = count_days_in_months(isLeapYear);
-      var sum = 0;
-
-      for (var month = 0; month < 12; month++) {
-        if (sum + countDaysInMonths[month] >= this._dayOfYear) {
-          this._month = month;
-          this._day = this._dayOfYear - sum;
-          break;
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator.return != null) {
+          _iterator.return();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
         }
       }
     }
 
-    if (this._am !== null && this._divideHours !== null) {
-      this._hours = this._am ? this._divideHours : this._divideHours + 12;
+    if (target || !this.isValidDate()) {
+      throw new Error('Date format is not correct');
     }
+
+    this._length = originalTarget.length - (target || originalTarget).length;
+
+    this._compute();
   }
-};
 
-FormatterParser.prototype.toObject = function () {
-  return {
-    year: this._year,
-    month: this._month,
-    day: this._day,
-    hours: this._hours,
-    minutes: this._minutes,
-    seconds: this._seconds,
-    microseconds: this._microseconds,
-    timezone: this._timezone
-  };
-};
+  _createClass(FormatterParser, [{
+    key: "d",
+    value: function d(target) {
+      if (target.match(/^(0[1-9]|[1-2][0-9]|3[0-1])/)) {
+        this._day = parseInt(target.slice(0, 2));
+        return target.slice(2);
+      }
 
-FormatterParser.prototype.isValidDate = function () {
-  var date = new Date(this._year, this._month, this._day);
-  return date.getFullYear() === this._year && date.getMonth() === this._month && date.getDate() === this._day;
-};
+      return null;
+    }
+  }, {
+    key: "D",
+    value: function D(target) {
+      var regexp = new RegExp("^(".concat(SHORT_DAYS.join('|'), ")"), 'i');
+      var match = target.match(regexp);
 
-/* harmony default export */ var formatter_parser = (FormatterParser);
+      if (match) {
+        this._dayOfWeek = SHORT_DAYS.indexOf(pascalCase(match[1]));
+        return target.slice(match[1].length);
+      }
+
+      return null;
+    }
+  }, {
+    key: "j",
+    value: function j(target) {
+      if (target.match(/^([1-2][0-9]|3[0-1])/)) {
+        this._day = parseInt(target.slice(0, 2));
+        return target.slice(2);
+      } else if (target.match(/^[0-9]/)) {
+        this._day = parseInt(target.slice(0, 1));
+        return target.slice(1);
+      }
+
+      return null;
+    }
+  }, {
+    key: "l",
+    value: function l(target) {
+      var regexp = new RegExp("^(".concat(DAYS.join('|'), ")"), 'i');
+      var match = target.match(regexp);
+
+      if (match) {
+        this._dayOfWeek = DAYS.indexOf(pascalCase(match[1]));
+        return target.slice(match[1].length);
+      }
+
+      return null;
+    }
+  }, {
+    key: "N",
+    value: function N(target) {
+      var match = target.match(/^[1-7]/);
+
+      if (match) {
+        this._dayOfWeek = parseInt(match[1]) - 1;
+        return target.slice(1);
+      }
+
+      return null;
+    }
+  }, {
+    key: "S",
+    value: function S(target) {
+      if (target.match(/^(st|nd|rd|th)/)) {
+        // todo
+        return target.slice(2);
+      }
+
+      return null;
+    }
+  }, {
+    key: "w",
+    value: function w(target) {
+      var match = target.match(/^[0-6]/);
+
+      if (match) {
+        this._dayOfWeek = parseInt(match[1]);
+        return target.slice(1);
+      }
+
+      return null;
+    }
+  }, {
+    key: "z",
+    value: function z(target) {
+      var regexps = [/^([1-2][0-9]{2}|3[0-5][0-9]|36[0-5])/, /^([1-9]{2})/, /^([1-9])/];
+
+      for (var _i = 0, _regexps = regexps; _i < _regexps.length; _i++) {
+        var regexp = _regexps[_i];
+        var match = target.match(regexp);
+
+        if (match) {
+          this._dayOfYear = parseInt(match[1]);
+          return target.slice(match[1].length);
+        }
+      }
+
+      return null;
+    }
+  }, {
+    key: "W",
+    value: function W(target) {
+      var regexps = [/^([1-4][0-9]|5[0-2])/, /^[0-9]/];
+
+      for (var _i2 = 0, _regexps2 = regexps; _i2 < _regexps2.length; _i2++) {
+        var regexp = _regexps2[_i2];
+        var match = target.match(regexp);
+
+        if (match) {
+          this._weekOfYear = parseInt(match[1]);
+          return target.slice(match[1].length);
+        }
+      }
+
+      return null;
+    }
+  }, {
+    key: "F",
+    value: function F(target) {
+      var regexp = new RegExp("^(".concat(MONTHS.join('|'), ")"), 'i');
+      var match = target.match(regexp);
+
+      if (match) {
+        this._month = MONTHS.indexOf(pascalCase(match[1]));
+        return target.slice(match[1].length);
+      }
+
+      return null;
+    }
+  }, {
+    key: "m",
+    value: function m(target) {
+      var match = target.match(/^(0[1-9]|1[0-2])/);
+
+      if (match) {
+        this._month = parseInt(match[0]) - 1;
+        return target.slice(match[0].length);
+      }
+
+      return null;
+    }
+  }, {
+    key: "M",
+    value: function M(target) {
+      var regexp = new RegExp("^(".concat(SHORT_MONTHS.join('|'), ")"), 'i');
+      var match = target.match(regexp);
+
+      if (match.length) {
+        this._month = SHORT_MONTHS.indexOf(pascalCase(match[1]));
+        return target.slice(match[1].length);
+      }
+
+      return null;
+    }
+  }, {
+    key: "n",
+    value: function n(target) {
+      var regexps = [/^1[0-2]/, /^[1-9]/];
+
+      for (var _i3 = 0, _regexps3 = regexps; _i3 < _regexps3.length; _i3++) {
+        var regexp = _regexps3[_i3];
+        var match = target.match(regexp);
+
+        if (match) {
+          this._month = parseInt(match[1]);
+          return target.slice(match[1].length);
+        }
+      }
+
+      return null;
+    }
+  }, {
+    key: "t",
+    value: function t(target) {
+      var regexps = [/^([1-2][0-9]|3[0-1])/, /^[1-9]/];
+
+      for (var _i4 = 0, _regexps4 = regexps; _i4 < _regexps4.length; _i4++) {
+        var regexp = _regexps4[_i4];
+        var match = target.match(regexp);
+
+        if (match) {
+          this._month = parseInt(match[1]);
+          return target.slice(match[1]);
+        }
+      }
+
+      return null;
+    }
+  }, {
+    key: "L",
+    value: function L(target) {
+      var match = target.match(/^[0-1]/);
+
+      if (match) {
+        this._leap = !!parseInt(match[1]);
+        return target.slice(1);
+      }
+
+      return null;
+    }
+  }, {
+    key: "o",
+    value: function o(target) {
+      return this.Y(target);
+    }
+  }, {
+    key: "Y",
+    value: function Y(target) {
+      var match = target.match(/^-?[0-9]{4}/);
+
+      if (match) {
+        this._year = parseInt(match[0]);
+        return target.slice(match[0].length);
+      }
+
+      return null;
+    }
+  }, {
+    key: "y",
+    value: function y(target) {
+      var match = target.match(/^-?[0-9]{2}/);
+
+      if (match) {
+        this._year = parseInt(match[1]);
+        return target.slice(match[1].length);
+      }
+
+      return null;
+    }
+  }, {
+    key: "a",
+    value: function a(target) {
+      var match = target.match(/^(am|pm)/i);
+
+      if (match) {
+        this._am = match[1].toLowerCase() === 'am';
+        return target.slice(match[1].length);
+      }
+
+      return null;
+    }
+  }, {
+    key: "A",
+    value: function A(target) {
+      return this.a(target);
+    }
+  }, {
+    key: "B",
+    value: function B(target) {
+      var match = target.match(/^[0-9]{3}/);
+
+      if (match) {
+        this._internetTime = parseInt(match[1]);
+        return target.slice(match[1].length);
+      }
+
+      return null;
+    }
+  }, {
+    key: "g",
+    value: function g(target) {
+      var regexps = [/^1[0-2]/, /^[0-9]/];
+
+      for (var _i5 = 0, _regexps5 = regexps; _i5 < _regexps5.length; _i5++) {
+        var regexp = _regexps5[_i5];
+        var match = target.match(regexp);
+
+        if (match) {
+          this._divideHours = parseInt(match[1]);
+          return target.slice(match[1].length);
+        }
+      }
+
+      return null;
+    }
+  }, {
+    key: "G",
+    value: function G(target) {
+      var regexps = [/^(1[0-9]|2[0-3])/, /^[0-9]/];
+
+      for (var _i6 = 0, _regexps6 = regexps; _i6 < _regexps6.length; _i6++) {
+        var regexp = _regexps6[_i6];
+        var match = target.match(regexp);
+
+        if (match) {
+          this._hours = parseInt(match[1]);
+          return target.slice(match[1].length);
+        }
+      }
+
+      return null;
+    }
+  }, {
+    key: "h",
+    value: function h(target) {
+      if (target.match(/^(0[0-9]|1[0-2])/)) {
+        this._hours = parseInt(target.slice(0, 2));
+        return target.slice(2);
+      }
+
+      return null;
+    }
+  }, {
+    key: "H",
+    value: function H(target) {
+      if (target.match(/^([0-1][0-9]|2[0-3])/)) {
+        this._hours = parseInt(target.slice(0, 2));
+        return target.slice(2);
+      }
+
+      return null;
+    }
+  }, {
+    key: "i",
+    value: function i(target) {
+      if (target.match(/^([0-5][0-9])/)) {
+        this._minutes = parseInt(target.slice(0, 2));
+        return target.slice(2);
+      }
+
+      return null;
+    }
+  }, {
+    key: "s",
+    value: function s(target) {
+      if (target.match(/^([0-5][0-9])/)) {
+        this._seconds = parseInt(target.slice(0, 2));
+        return target.slice(2);
+      }
+
+      return null;
+    }
+  }, {
+    key: "u",
+    value: function u(target) {
+      if (target.match(/^([0-9]{6})/)) {
+        this._microseconds = parseInt(target.slice(0, 6));
+        return target.slice(6);
+      }
+
+      return null;
+    }
+  }, {
+    key: "v",
+    value: function v(target) {
+      if (target.match(/^([0-9]{3})/)) {
+        this._microseconds = parseInt(target.slice(0, 3) + '000');
+        return target.slice(3);
+      }
+
+      return null;
+    }
+  }, {
+    key: "O",
+    value: function O(target) {
+      var match = target.match(/^[-+]([0-1][0-9]|2[0-3])([0-5][0-9])/);
+
+      if (match) {
+        this._offsetSeconds = parseInt(match[1]) * 60 + parseInt(match[2]);
+        return target.slice(5);
+      }
+
+      return null;
+    }
+  }, {
+    key: "P",
+    value: function P(target) {
+      var match = target.match(/^[-+]([0-1][0-9]|2[0-3]):([0-5][0-9])/);
+
+      if (match) {
+        this._offsetSeconds = parseInt(match[1]) * 60 + parseInt(match[2]);
+        return target.slice(5);
+      }
+
+      return null;
+    }
+  }, {
+    key: "c",
+    value: function c(target) {
+      return this._complex('Y-m-d\\TH:i:sP', target);
+    }
+  }, {
+    key: "r",
+    value: function r(target) {
+      return this._complex('D, d M Y H:i:s O', target);
+    }
+  }, {
+    key: "U",
+    value: function U(target) {
+      var match = target.match(/^(-?[0-9]+)/);
+
+      if (match) {
+        var date = new Date(match[0]);
+        this._year = date.getFullYear();
+        this._month = date.getMonth();
+        this._day = date.getDate();
+        this._hours = date.getHours();
+        this._minutes = date.getMinutes();
+        this._seconds = date.getSeconds();
+        this._microseconds = 0;
+        return target.slice(match[1].length);
+      }
+
+      return null;
+    }
+  }, {
+    key: "_complex",
+    value: function _complex(format, target) {
+      try {
+        var parser = new FormatterParser(format, target);
+        var parseResult = parser.toObject();
+        this._year = parseResult.year;
+        this._month = parseResult.month;
+        this._day = parseResult.day;
+        this._hours = parseResult.hours;
+        this._minutes = parseResult.minutes;
+        this._seconds = parseResult.seconds;
+        this._timezone = parseResult.timezone || this._timezone;
+        return target.slice(parser._length);
+      } catch (e) {
+        return null;
+      }
+    }
+  }, {
+    key: "_compute",
+    value: function _compute() {
+      if (!this._day) {
+        if (this._weekOfYear && this._dayOfWeek !== null && this._year) {
+          this._dayOfYear = this._weekOfYear * 7 + day_on_first_week_in_year(this._year) + this._dayOfWeek;
+        }
+
+        if (this._dayOfYear && this._year) {
+          var isLeapYear = false; // a leap year
+
+          if (is_leap_year(this._year)) {
+            isLeapYear = true;
+          }
+
+          var countDaysInMonths = count_days_in_months(isLeapYear);
+          var sum = 0;
+
+          for (var month = 0; month < 12; month++) {
+            if (sum + countDaysInMonths[month] >= this._dayOfYear) {
+              this._month = month;
+              this._day = this._dayOfYear - sum;
+              break;
+            }
+          }
+        }
+
+        if (this._am !== null && this._divideHours !== null) {
+          this._hours = this._am ? this._divideHours : this._divideHours + 12;
+        }
+      }
+    }
+  }, {
+    key: "toObject",
+    value: function toObject() {
+      return {
+        year: this._year,
+        month: this._month,
+        day: this._day,
+        hours: this._hours,
+        minutes: this._minutes,
+        seconds: this._seconds,
+        microseconds: this._microseconds,
+        timezone: this._timezone
+      };
+    }
+  }, {
+    key: "isValidDate",
+    value: function isValidDate() {
+      var date = new Date(this._year, this._month, this._day);
+      return date.getFullYear() === this._year && date.getMonth() === this._month && date.getDate() === this._day;
+    }
+  }]);
+
+  return FormatterParser;
+}();
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.concat.js
 var es_array_concat = __webpack_require__("99af");
 
@@ -21260,200 +21326,268 @@ var es_array_concat = __webpack_require__("99af");
 
 
 
-var FormatterBuilder = function FormatterBuilder(formatter) {
-  this.formatter = formatter;
-};
 
-FormatterBuilder.prototype.build = function (format) {
-  var symbols = format.match(/\\?./g);
-  var result = '';
 
-  for (var i = 0; i < symbols.length; i++) {
-    var item = symbols[i];
 
-    if (typeof this[item] === 'function' && item.length === 1) {
-      result += this[item]();
-    } else {
-      result += item;
+
+
+
+
+
+var formatter_builder_FormatterBuilder =
+/*#__PURE__*/
+function () {
+  function FormatterBuilder(formatter) {
+    _classCallCheck(this, FormatterBuilder);
+
+    this.formatter = formatter;
+  }
+
+  _createClass(FormatterBuilder, [{
+    key: "build",
+    value: function build(format) {
+      var symbols = format.match(/\\?./g);
+      var result = '';
+      var _iteratorNormalCompletion = true;
+      var _didIteratorError = false;
+      var _iteratorError = undefined;
+
+      try {
+        for (var _iterator = symbols[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+          var symbol = _step.value;
+
+          if (typeof this[symbol] === 'function' && symbol.length === 1) {
+            result += this[symbol]();
+          } else {
+            result += symbol;
+          }
+        }
+      } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion && _iterator.return != null) {
+            _iterator.return();
+          }
+        } finally {
+          if (_didIteratorError) {
+            throw _iteratorError;
+          }
+        }
+      }
+
+      return result;
     }
-  }
+  }, {
+    key: "d",
+    value: function d() {
+      var day = this.formatter.day;
+      return "".concat(day < 10 ? 0 : '').concat(day);
+    }
+  }, {
+    key: "D",
+    value: function D() {
+      var date = this._date();
 
-  return result;
-};
+      return date.getDay() ? SHORT_DAYS[date.getDay() - 1] : SHORT_DAYS[SHORT_DAYS.length - 1];
+    }
+  }, {
+    key: "j",
+    value: function j() {
+      return "".concat(this.formatter.day);
+    }
+  }, {
+    key: "l",
+    value: function l() {
+      var date = this._date();
 
-FormatterBuilder.prototype.d = function () {
-  var day = this.formatter.day;
-  return "".concat(day < 10 ? 0 : '').concat(day);
-};
+      return date.getDay() ? DAYS[date.getDay() - 1] : DAYS[DAYS.length - 1];
+    }
+  }, {
+    key: "N",
+    value: function N() {
+      var date = this._date();
 
-FormatterBuilder.prototype.D = function () {
-  var date = this._date();
+      return date.getDay() ? date.getDay() : 7;
+    }
+  }, {
+    key: "S",
+    value: function S() {
+      if ("".concat(this.formatter.day).slice(-1) === '1' && "".concat(this.formatter.day).slice(-2) !== '11') {
+        return 'st';
+      }
 
-  return date.getDay() ? SHORT_DAYS[date.getDay() - 1] : SHORT_DAYS[SHORT_DAYS.length - 1];
-};
+      if ("".concat(this.formatter.day).slice(-1) === '2' && "".concat(this.formatter.day).slice(-2) !== '12') {
+        return 'nd';
+      }
 
-FormatterBuilder.prototype.j = function () {
-  return "".concat(this.formatter.day);
-};
+      if ("".concat(this.formatter.day).slice(-1) === '3' && "".concat(this.formatter.day).slice(-2) !== '13') {
+        return 'rd';
+      }
 
-FormatterBuilder.prototype.l = function () {
-  var date = this._date();
+      return 'th';
+    }
+  }, {
+    key: "w",
+    value: function w() {
+      return this._date().getDay();
+    }
+  }, {
+    key: "z",
+    value: function z() {
+      var result = 0;
 
-  return date.getDay() ? DAYS[date.getDay() - 1] : DAYS[DAYS.length - 1];
-};
+      for (var month = 0; month < this.formatter.month; month++) {
+        result += count_days_in_months(this.formatter.isLeapYear);
+      }
 
-FormatterBuilder.prototype.N = function () {
-  var date = this._date();
+      return result + this.formatter.day - 1;
+    }
+  }, {
+    key: "W",
+    value: function W() {
+      var days = 0;
 
-  return date.getDay() ? date.getDay() : 7;
-};
+      for (var month = 0; month < this.formatter.month; month++) {
+        days += count_days_in_months(this.formatter.isLeapYear);
+      }
 
-FormatterBuilder.prototype.S = function () {
-  if ("".concat(this.formatter.day).slice(-1) === '1' && "".concat(this.formatter.day).slice(-2) !== '11') {
-    return 'st';
-  }
+      days += this.formatter.day - day_on_first_week_in_year(this.formatter.year);
+      return Math.ceil(days / 7);
+    }
+  }, {
+    key: "F",
+    value: function F() {
+      console.log('F month', this.formatter.month);
+      return MONTHS[this.formatter.month];
+    }
+  }, {
+    key: "m",
+    value: function m() {
+      var month = this.formatter.month + 1;
+      return "".concat(month < 10 ? 0 : '').concat(month);
+    }
+  }, {
+    key: "M",
+    value: function M() {
+      return SHORT_MONTHS[this.formatter.month];
+    }
+  }, {
+    key: "n",
+    value: function n() {
+      return "".concat(this.formatter.month + 1);
+    }
+  }, {
+    key: "t",
+    value: function t() {
+      return count_days_in_months(this.formatter.isLeapYear)[this.formatter.month];
+    }
+  }, {
+    key: "L",
+    value: function L() {
+      return "".concat(this.formatter.isLeapYear ? 1 : 0);
+    }
+  }, {
+    key: "o",
+    value: function o() {
+      return this.Y();
+    }
+  }, {
+    key: "Y",
+    value: function Y() {
+      var abs = Math.abs(this.formatter.year);
+      var result = "0000".concat(abs).slice(-4);
+      return (this.formatter.year < 0 ? '-' : '') + result;
+    }
+  }, {
+    key: "y",
+    value: function y() {
+      return "00".concat(this.formatter.year).slice(-2);
+    }
+  }, {
+    key: "a",
+    value: function a() {
+      return this.formatter.hours < 12 ? 'am' : 'pm';
+    }
+  }, {
+    key: "A",
+    value: function A() {
+      return this.a().toUpperCase();
+    }
+  }, {
+    key: "B",
+    value: function B() {
+      var maxSeconds = 24 * 60 * 60 + 60 * 60 + 60;
+      var actualSeconds = this.formatter.hours * 60 * 60 + this.formatter.minutes * 60 + this.formatter.seconds;
+      var result = Math.floor(actualSeconds * 999 / maxSeconds);
+      return "00".concat(result).slice(-3);
+    }
+  }, {
+    key: "g",
+    value: function g() {
+      return this.formatter.hours < 13 ? "".concat(this.formatter.hours) : "".concat(this.formatter.hours - 12);
+    }
+  }, {
+    key: "G",
+    value: function G() {
+      return "".concat(this.formatter.hours);
+    }
+  }, {
+    key: "h",
+    value: function h() {
+      var result = parseInt(this.g());
+      return "0".concat(result).slice(-2);
+    }
+  }, {
+    key: "H",
+    value: function H() {
+      return "0".concat(this.formatter.hours).slice(-2);
+    }
+  }, {
+    key: "i",
+    value: function i() {
+      return "0".concat(this.formatter.seconds).slice(-2);
+    }
+  }, {
+    key: "s",
+    value: function s() {
+      return "0".concat(this.formatter.minutes).slice(-2);
+    }
+  }, {
+    key: "u",
+    value: function u() {
+      return "000000".concat(this.formatter.microseconds).slice(-6);
+    }
+  }, {
+    key: "v",
+    value: function v() {
+      return "000".concat(this.formatter.microseconds).slice(-6, 3);
+    }
+  }, {
+    key: "c",
+    value: function c() {
+      return [[this.Y(), this.m(), this.d()].join('-'), 'T', [this.H(), this.i(), this.s()].join(':'), '+00:00'].join('');
+    }
+  }, {
+    key: "r",
+    value: function r() {
+      return [this.D() + ',', this.d(), this.M(), this.Y(), [this.H(), this.i(), this.s()].join(':'), '+0000'].join(' ');
+    }
+  }, {
+    key: "U",
+    value: function U() {
+      return this._date().getTime();
+    }
+  }, {
+    key: "_date",
+    value: function _date() {
+      return new Date(this.formatter.year, this.formatter.month, this.formatter.day, this.formatter.hours, this.formatter.minutes, this.formatter.seconds);
+    }
+  }]);
 
-  if ("".concat(this.formatter.day).slice(-1) === '2' && "".concat(this.formatter.day).slice(-2) !== '12') {
-    return 'nd';
-  }
-
-  if ("".concat(this.formatter.day).slice(-1) === '3' && "".concat(this.formatter.day).slice(-2) !== '13') {
-    return 'rd';
-  }
-
-  return 'th';
-};
-
-FormatterBuilder.prototype.w = function () {
-  return this._date().getDay();
-};
-
-FormatterBuilder.prototype.z = function () {
-  var result = 0;
-
-  for (var month = 0; month < this.formatter.month; month++) {
-    result += count_days_in_months(this.formatter.isLeapYear);
-  }
-
-  return result + this.formatter.day - 1;
-};
-
-FormatterBuilder.prototype.W = function () {
-  var days = 0;
-
-  for (var month = 0; month < this.formatter.month; month++) {
-    days += count_days_in_months(this.formatter.isLeapYear);
-  }
-
-  days += this.formatter.day - day_on_first_week_in_year(this.formatter.year);
-  return Math.ceil(days / 7);
-};
-
-FormatterBuilder.prototype.F = function () {
-  console.log('F month', this.formatter.month);
-  return MONTHS[this.formatter.month];
-};
-
-FormatterBuilder.prototype.m = function () {
-  var month = this.formatter.month + 1;
-  return "".concat(month < 10 ? 0 : '').concat(month);
-};
-
-FormatterBuilder.prototype.M = function () {
-  return SHORT_MONTHS[this.formatter.month];
-};
-
-FormatterBuilder.prototype.n = function () {
-  return "".concat(this.formatter.month + 1);
-};
-
-FormatterBuilder.prototype.t = function () {
-  return count_days_in_months(this.formatter.isLeapYear)[this.formatter.month];
-};
-
-FormatterBuilder.prototype.L = function () {
-  return "".concat(this.formatter.isLeapYear ? 1 : 0);
-};
-
-FormatterBuilder.prototype.o = function () {
-  return this.Y();
-};
-
-FormatterBuilder.prototype.Y = function () {
-  var abs = Math.abs(this.formatter.year);
-  var result = "0000".concat(abs).slice(-4);
-  return (this.formatter.year < 0 ? '-' : '') + result;
-};
-
-FormatterBuilder.prototype.y = function () {
-  return "00".concat(this.formatter.year).slice(-2);
-};
-
-FormatterBuilder.prototype.a = function () {
-  return this.formatter.hours < 12 ? 'am' : 'pm';
-};
-
-FormatterBuilder.prototype.A = function () {
-  return this.a().toUpperCase();
-};
-
-FormatterBuilder.prototype.B = function () {
-  var maxSeconds = 24 * 60 * 60 + 60 * 60 + 60;
-  var actualSeconds = this.formatter.hours * 60 * 60 + this.formatter.minutes * 60 + this.formatter.seconds;
-  var result = Math.floor(actualSeconds * 999 / maxSeconds);
-  return "00".concat(result).slice(-3);
-};
-
-FormatterBuilder.prototype.g = function () {
-  return this.formatter.hours < 13 ? "".concat(this.formatter.hours) : "".concat(this.formatter.hours - 12);
-};
-
-FormatterBuilder.prototype.G = function () {
-  return "".concat(this.formatter.hours);
-};
-
-FormatterBuilder.prototype.h = function () {
-  var result = parseInt(this.g());
-  return "0".concat(result).slice(-2);
-};
-
-FormatterBuilder.prototype.H = function () {
-  return "0".concat(this.formatter.hours).slice(-2);
-};
-
-FormatterBuilder.prototype.i = function () {
-  return "0".concat(this.formatter.seconds).slice(-2);
-};
-
-FormatterBuilder.prototype.s = function () {
-  return "0".concat(this.formatter.minutes).slice(-2);
-};
-
-FormatterBuilder.prototype.u = function () {
-  return "000000".concat(this.formatter.microseconds).slice(-6);
-};
-
-FormatterBuilder.prototype.v = function () {
-  return "000".concat(this.formatter.microseconds).slice(-6, 3);
-};
-
-FormatterBuilder.prototype.c = function () {
-  return [[this.Y(), this.m(), this.d()].join('-'), 'T', [this.H(), this.i(), this.s()].join(':'), '+00:00'].join('');
-};
-
-FormatterBuilder.prototype.r = function () {
-  return [this.D() + ',', this.d(), this.M(), this.Y(), [this.H(), this.i(), this.s()].join(':'), '+0000'].join(' ');
-};
-
-FormatterBuilder.prototype.U = function () {
-  return this._date().getTime();
-};
-
-FormatterBuilder.prototype._date = function () {
-  return new Date(this.formatter.year, this.formatter.month, this.formatter.day, this.formatter.hours, this.formatter.minutes, this.formatter.seconds);
-};
-
-/* harmony default export */ var formatter_builder = (FormatterBuilder);
+  return FormatterBuilder;
+}();
 // CONCATENATED MODULE: ./src/utils/formatter.js
 
 
@@ -21479,7 +21613,7 @@ function () {
   _createClass(Formatter, [{
     key: "build",
     value: function build(format) {
-      var builder = new /* Cannot get final name for export "FormatterBuilder" in "./src/utils/formatter/formatter-builder.js" (known exports: default, known reexports: ) */ undefined(this);
+      var builder = new formatter_builder_FormatterBuilder(this);
       return builder.build(format);
     }
   }, {
@@ -21551,7 +21685,7 @@ function () {
   }], [{
     key: "parse",
     value: function parse(format, target) {
-      var parser = new /* Cannot get final name for export "FormatterParser" in "./src/utils/formatter/formatter-parser.js" (known exports: default, known reexports: ) */ undefined(format, target);
+      var parser = new formatter_parser_FormatterParser(format, target);
       var result = parser.toObject();
       return new Formatter(result.year, result.month, result.day, result.hours, result.minutes, result.seconds, result.microseconds, result.timezone);
     }
@@ -21559,14 +21693,14 @@ function () {
 
   return Formatter;
 }();
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a8e46aec-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DateTimePickerInput.vue?vue&type=template&id=3aa1ef24&
-var DateTimePickerInputvue_type_template_id_3aa1ef24_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.showIconPrepend || _vm.showIconAppend)?_c('div',{staticClass:"input-group"},[_vm._t("prepend",[(_vm.showIconPrepend)?_c('div',{staticClass:"input-group-prepend"},[_c('span',{staticClass:"input-group-text"},[_c('CalendarAltSolid')],1)]):_vm._e()]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.model),expression:"model"}],staticClass:"form-control",attrs:{"type":"text","placeholder":_vm.placeholder},domProps:{"value":(_vm.model)},on:{"focus":_vm.focus,"input":function($event){if($event.target.composing){ return; }_vm.model=$event.target.value}}}),(_vm.showIconAppend || _vm.$slots.append)?_c('div',{staticClass:"input-group-append"},[_vm._t("append",[(_vm.showIconAppend)?_c('span',{staticClass:"input-group-text"},[_c('CalendarAltSolid')],1):_vm._e()])],2):_vm._e()],2):_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.model),expression:"model"}],staticClass:"form-control",attrs:{"type":"text","placeholder":_vm.placeholder},domProps:{"value":(_vm.model)},on:{"focus":_vm.focus,"input":function($event){if($event.target.composing){ return; }_vm.model=$event.target.value}}})}
-var DateTimePickerInputvue_type_template_id_3aa1ef24_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"05b16931-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DateTimePickerInput.vue?vue&type=template&id=2740ffa8&
+var DateTimePickerInputvue_type_template_id_2740ffa8_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return (_vm.showIconPrepend || _vm.showIconAppend)?_c('div',{staticClass:"input-group"},[_vm._t("prepend",[(_vm.showIconPrepend)?_c('div',{staticClass:"input-group-prepend"},[_c('span',{staticClass:"input-group-text"},[_c('CalendarAltSolid')],1)]):_vm._e()]),_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.model),expression:"model"}],staticClass:"form-control",attrs:{"type":"text","placeholder":_vm.placeholder},domProps:{"value":(_vm.model)},on:{"focus":_vm.focus,"input":function($event){if($event.target.composing){ return; }_vm.model=$event.target.value}}}),(_vm.showIconAppend || _vm.$slots.append)?_c('div',{staticClass:"input-group-append"},[_vm._t("append",[(_vm.showIconAppend)?_c('span',{staticClass:"input-group-text"},[_c('CalendarAltSolid')],1):_vm._e()])],2):_vm._e()],2):_c('input',{directives:[{name:"model",rawName:"v-model",value:(_vm.model),expression:"model"}],staticClass:"form-control",attrs:{"type":"text","placeholder":_vm.placeholder},domProps:{"value":(_vm.model)},on:{"focus":_vm.focus,"input":function($event){if($event.target.composing){ return; }_vm.model=$event.target.value}}})}
+var DateTimePickerInputvue_type_template_id_2740ffa8_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/DateTimePickerInput.vue?vue&type=template&id=3aa1ef24&
+// CONCATENATED MODULE: ./src/components/DateTimePickerInput.vue?vue&type=template&id=2740ffa8&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a8e46aec-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FontAwesome/CalendarAltSolid.vue?vue&type=template&id=a542038c&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"05b16931-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FontAwesome/CalendarAltSolid.vue?vue&type=template&id=a542038c&
 var CalendarAltSolidvue_type_template_id_a542038c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{staticClass:"svg-inline--fa fa-calendar-alt fa-w-14",staticStyle:{"width":"16px"},attrs:{"aria-hidden":"true","focusable":"false","data-prefix":"fas","data-icon":"calendar-alt","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 448 512"}},[_c('path',{attrs:{"fill":"currentColor","d":"M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"}})])}
 var CalendarAltSolidvue_type_template_id_a542038c_staticRenderFns = []
 
@@ -21811,8 +21945,8 @@ var component = normalizeComponent(
 
 var DateTimePickerInput_component = normalizeComponent(
   components_DateTimePickerInputvue_type_script_lang_js_,
-  DateTimePickerInputvue_type_template_id_3aa1ef24_render,
-  DateTimePickerInputvue_type_template_id_3aa1ef24_staticRenderFns,
+  DateTimePickerInputvue_type_template_id_2740ffa8_render,
+  DateTimePickerInputvue_type_template_id_2740ffa8_staticRenderFns,
   false,
   null,
   null,
@@ -21821,68 +21955,30 @@ var DateTimePickerInput_component = normalizeComponent(
 )
 
 /* harmony default export */ var DateTimePickerInput = (DateTimePickerInput_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a8e46aec-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DateTimePickerPopup.vue?vue&type=template&id=a43be08c&
-var DateTimePickerPopupvue_type_template_id_a43be08c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"date-time-picker-popup",style:(_vm.styles),attrs:{"tabindex":"0"}},[_c('DatePicker',{attrs:{"year":_vm.shownYear,"month":_vm.shownMonth,"selected-year":_vm.selectedYear,"selected-month":_vm.selectedMonth,"selected-day":_vm.selectedDay},on:{"select":_vm.selectDay,"show":_vm.showDate}})],1)}
-var DateTimePickerPopupvue_type_template_id_a43be08c_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"05b16931-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DatePicker.vue?vue&type=template&id=a80aedb8&
+var DatePickervue_type_template_id_a80aedb8_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"date-picker"},[_c('DatePickerHeader',{attrs:{"type":_vm.type,"shown-month":_vm.shownMonth,"shown-year":_vm.shownYear},on:{"type:update":_vm.changeType,"shown-month:change":_vm.changeShownMonth,"shown-year:change":_vm.changeShownYear}}),(_vm.isMonth)?_c('DatePickerMonth',{attrs:{"year":_vm.year,"month":_vm.month,"selected-year":_vm.selectedYear,"selected-month":_vm.selectedMonth,"selected-day":_vm.selectedDay,"shown-year":_vm.shownYear,"shown-month":_vm.shownMonth},on:{"shown-month:change":_vm.changeShownMonth,"select":_vm.selectDate,"close":_vm.nextType}}):_vm._e(),(_vm.isYear)?_c('DatePickerYear',{attrs:{"shown-year":_vm.shownYear},on:{"shown-month:change":_vm.changeShownMonth,"close":_vm.nextType}}):(_vm.isDecade)?_c('DatePickerDecade',{attrs:{"shown-year":_vm.shownYear},on:{"shown-year:change":_vm.changeShownYear,"close":_vm.nextType}}):(_vm.isCentury)?_c('DatePickerCentury',{attrs:{"shown-year":_vm.shownYear},on:{"shown-year:change":_vm.changeShownYear,"close":_vm.nextType}}):_vm._e()],1)}
+var DatePickervue_type_template_id_a80aedb8_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/DateTimePickerPopup.vue?vue&type=template&id=a43be08c&
+// CONCATENATED MODULE: ./src/components/DatePicker.vue?vue&type=template&id=a80aedb8&
+
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"05b16931-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DatePicker/DatePickerMonth.vue?vue&type=template&id=44564ef2&
+var DatePickerMonthvue_type_template_id_44564ef2_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"date-picker-month"},[_c('div',{staticClass:"date-picker-month__header"},[_vm._l((_vm.shortDays),function(shortDay){return [_c('div',{key:shortDay,staticClass:"date-picker-month__header-item"},[_vm._v(" "+_vm._s(shortDay)+" ")])]})],2),_vm._l((_vm.weeks),function(week,index){return [_c('div',{key:index,staticClass:"date-picker-month__week"},[_vm._l((week),function(day){return [_c('DatePickerMonthWeekDay',{key:day.key,attrs:{"year":day.year,"month":day.month,"day":day.day,"selected-year":_vm.selectedYear,"selected-month":_vm.selectedMonth,"selected-day":_vm.selectedDay,"shown-year":_vm.shownYear,"shown-month":_vm.shownMonth},on:{"select":_vm.selectDay}})]})],2)]}),_c('div',{staticClass:"date-picker-month__footer",on:{"click":_vm.selectToday}},[_c('button',{staticClass:"btn btn-link",attrs:{"type":"button"}},[_vm._v(" Today ")])])],2)}
+var DatePickerMonthvue_type_template_id_44564ef2_staticRenderFns = []
+
+
+// CONCATENATED MODULE: ./src/components/DatePicker/DatePickerMonth.vue?vue&type=template&id=44564ef2&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.number.constructor.js
 var es_number_constructor = __webpack_require__("a9e3");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a8e46aec-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DatePicker.vue?vue&type=template&id=362ccde4&
-var DatePickervue_type_template_id_362ccde4_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"date-picker"},[_c('DatePickerHeader',{attrs:{"type":_vm.type,"shown-month":_vm.shownMonth,"shown-year":_vm.shownYear},on:{"type:update":_vm.changeType,"shown-month:change":_vm.changeShownMonth,"shown-year:change":_vm.changeShownYear}}),(_vm.isMonth)?_c('DatePickerMonth',{attrs:{"year":_vm.year,"month":_vm.month,"selected-year":_vm.selectedYear,"selected-month":_vm.selectedMonth,"selected-day":_vm.selectedDay,"shown-year":_vm.shownYear,"shown-month":_vm.shownMonth},on:{"shown-month:change":_vm.changeShownMonth,"select":_vm.selectDate,"close":_vm.nextType}}):_vm._e(),(_vm.isYear)?_c('DatePickerYear',{attrs:{"shown-year":_vm.shownYear},on:{"shown-month:change":_vm.changeShownMonth,"close":_vm.nextType}}):(_vm.isDecade)?_c('DatePickerDecade',{attrs:{"shown-year":_vm.shownYear},on:{"shown-year:change":_vm.changeShownYear,"close":_vm.nextType}}):(_vm.isCentury)?_c('DatePickerCentury',{attrs:{"shown-year":_vm.shownYear},on:{"shown-year:change":_vm.changeShownYear,"close":_vm.nextType}}):_vm._e()],1)}
-var DatePickervue_type_template_id_362ccde4_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"05b16931-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DatePicker/DatePickerMonth/DatePickerMonthWeekDay.vue?vue&type=template&id=12bd37f3&
+var DatePickerMonthWeekDayvue_type_template_id_12bd37f3_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"date-picker-month__week-day"},[_c('button',{staticClass:"btn date-time-picker-button",class:_vm.className,attrs:{"type":"button"},on:{"click":_vm.select}},[_vm._v(" "+_vm._s(_vm.day)+" ")])])}
+var DatePickerMonthWeekDayvue_type_template_id_12bd37f3_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/DatePicker.vue?vue&type=template&id=362ccde4&
+// CONCATENATED MODULE: ./src/components/DatePicker/DatePickerMonth/DatePickerMonthWeekDay.vue?vue&type=template&id=12bd37f3&
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a8e46aec-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DatePicker/DatePickerMonth.vue?vue&type=template&id=77628a16&
-var DatePickerMonthvue_type_template_id_77628a16_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"date-picker-month"},[_c('div',{staticClass:"date-picker-month__header"},[_vm._l((_vm.shortDays),function(shortDay){return [_c('div',{key:shortDay,staticClass:"date-picker-month__header-item"},[_vm._v(" "+_vm._s(shortDay)+" ")])]})],2),_vm._l((_vm.weeks),function(week,index){return [_c('div',{key:index,staticClass:"date-picker-month__week"},[_vm._l((week),function(day){return [_c('DatePickerMonthWeekDay',{key:day.key,attrs:{"year":day.year,"month":day.month,"day":day.day,"selected-year":_vm.selectedYear,"selected-month":_vm.selectedMonth,"selected-day":_vm.selectedDay,"shown-year":_vm.shownYear,"shown-month":_vm.shownMonth},on:{"select":_vm.selectDay}})]})],2)]}),_c('div',{staticClass:"date-picker-month__footer",on:{"click":_vm.selectToday}},[_c('button',{staticClass:"btn btn-link",attrs:{"type":"button"}},[_vm._v(" Today ")])])],2)}
-var DatePickerMonthvue_type_template_id_77628a16_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./src/components/DatePicker/DatePickerMonth.vue?vue&type=template&id=77628a16&
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.symbol.js
-var es_symbol = __webpack_require__("a4d3");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.symbol.description.js
-var es_symbol_description = __webpack_require__("e01a");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.symbol.iterator.js
-var es_symbol_iterator = __webpack_require__("d28b");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.object.to-string.js
-var es_object_to_string = __webpack_require__("d3b7");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.iterator.js
-var es_string_iterator = __webpack_require__("3ca3");
-
-// EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom-collections.iterator.js
-var web_dom_collections_iterator = __webpack_require__("ddb0");
-
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a8e46aec-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DatePicker/DatePickerMonth/DatePickerMonthWeekDay.vue?vue&type=template&id=2d119855&
-var DatePickerMonthWeekDayvue_type_template_id_2d119855_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"date-picker-month__week-day"},[_c('button',{staticClass:"btn date-time-picker-button",class:_vm.className,attrs:{"type":"button"},on:{"click":_vm.select}},[_vm._v(" "+_vm._s(_vm.day)+" ")])])}
-var DatePickerMonthWeekDayvue_type_template_id_2d119855_staticRenderFns = []
-
-
-// CONCATENATED MODULE: ./src/components/DatePicker/DatePickerMonth/DatePickerMonthWeekDay.vue?vue&type=template&id=2d119855&
-
-// CONCATENATED MODULE: ./src/mixins/ShownMonthMixin.js
-
-/* harmony default export */ var ShownMonthMixin = ({
-  props: {
-    shownMonth: {
-      type: Number,
-      required: true,
-      validator: function validator(value) {
-        return value >= 0 && value <= 11;
-      }
-    }
-  }
-});
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/@vue/cli-plugin-babel/node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DatePicker/DatePickerMonth/DatePickerMonthWeekDay.vue?vue&type=script&lang=js&
 
 //
@@ -21898,10 +21994,8 @@ var DatePickerMonthWeekDayvue_type_template_id_2d119855_staticRenderFns = []
 //
 //
 //
-
 /* harmony default export */ var DatePickerMonthWeekDayvue_type_script_lang_js_ = ({
   name: 'DatePickerMonthWeekDay',
-  mixins: [ShownMonthMixin],
   props: {
     year: {
       type: Number,
@@ -21924,6 +22018,13 @@ var DatePickerMonthWeekDayvue_type_template_id_2d119855_staticRenderFns = []
     shownYear: {
       type: Number,
       required: true
+    },
+    shownMonth: {
+      type: Number,
+      required: true,
+      validator: function validator(value) {
+        return value >= 0 && value <= 11;
+      }
     },
     selectedYear: {
       required: true
@@ -21988,8 +22089,8 @@ var DatePickerMonthWeekDayvue_type_template_id_2d119855_staticRenderFns = []
 
 var DatePickerMonthWeekDay_component = normalizeComponent(
   DatePickerMonth_DatePickerMonthWeekDayvue_type_script_lang_js_,
-  DatePickerMonthWeekDayvue_type_template_id_2d119855_render,
-  DatePickerMonthWeekDayvue_type_template_id_2d119855_staticRenderFns,
+  DatePickerMonthWeekDayvue_type_template_id_12bd37f3_render,
+  DatePickerMonthWeekDayvue_type_template_id_12bd37f3_staticRenderFns,
   false,
   null,
   null,
@@ -22008,56 +22109,56 @@ var DatePickerMonthWeekDay_component = normalizeComponent(
 
 
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -22066,7 +22167,6 @@ var DatePickerMonthWeekDay_component = normalizeComponent(
   components: {
     DatePickerMonthWeekDay: DatePickerMonthWeekDay
   },
-  mixins: [ShownMonthMixin],
   props: {
     selectedYear: {
       required: true
@@ -22080,6 +22180,13 @@ var DatePickerMonthWeekDay_component = normalizeComponent(
     shownYear: {
       type: Number,
       required: true
+    },
+    shownMonth: {
+      type: Number,
+      required: true,
+      validator: function validator(value) {
+        return value >= 0 && value < 12;
+      }
     }
   },
   computed: {
@@ -22205,8 +22312,8 @@ var DatePickerMonthWeekDay_component = normalizeComponent(
 
 var DatePickerMonth_component = normalizeComponent(
   DatePicker_DatePickerMonthvue_type_script_lang_js_,
-  DatePickerMonthvue_type_template_id_77628a16_render,
-  DatePickerMonthvue_type_template_id_77628a16_staticRenderFns,
+  DatePickerMonthvue_type_template_id_44564ef2_render,
+  DatePickerMonthvue_type_template_id_44564ef2_staticRenderFns,
   false,
   null,
   null,
@@ -22215,7 +22322,7 @@ var DatePickerMonth_component = normalizeComponent(
 )
 
 /* harmony default export */ var DatePickerMonth = (DatePickerMonth_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a8e46aec-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DatePicker/DatePickerCentury.vue?vue&type=template&id=5ab5b469&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"05b16931-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DatePicker/DatePickerCentury.vue?vue&type=template&id=5ab5b469&
 var DatePickerCenturyvue_type_template_id_5ab5b469_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"date-picker-century"},[_vm._l((_vm.decades),function(chunk,index){return [_c('div',{key:index,staticClass:"date-picker-century__column"},[_vm._l((chunk),function(decade){return [_c('div',{key:decade.startYearOfDecade + decade.finishYearOfDecade,staticClass:"date-picker-century__item"},[_c('button',{staticClass:"btn date-time-picker-button",class:_vm.className(decade.startYearOfDecade, decade.finishYearOfDecade),attrs:{"type":"button"},on:{"click":function($event){return _vm.select(decade.startYearOfDecade, decade.finishYearOfDecade)}}},[_vm._v(" "+_vm._s(decade.startYearOfDecade)+" - "+_vm._s(decade.finishYearOfDecade)+" ")])])]})],2)]})],2)}
 var DatePickerCenturyvue_type_template_id_5ab5b469_staticRenderFns = []
 
@@ -22337,7 +22444,7 @@ var DatePickerCentury_component = normalizeComponent(
 )
 
 /* harmony default export */ var DatePickerCentury = (DatePickerCentury_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a8e46aec-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DatePicker/DatePickerDecade.vue?vue&type=template&id=4d0d2424&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"05b16931-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DatePicker/DatePickerDecade.vue?vue&type=template&id=4d0d2424&
 var DatePickerDecadevue_type_template_id_4d0d2424_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"date-picker-decade"},[_vm._l((_vm.years),function(chunk,index){return [_c('div',{key:index,staticClass:"date-picker-decade__row"},[_vm._l((chunk),function(year){return [_c('div',{key:year,staticClass:"date-picker-decade__item"},[_c('button',{staticClass:"btn date-time-picker-button",class:_vm.className(year),attrs:{"type":"button"},on:{"click":function($event){return _vm.select(year)}}},[_vm._v(" "+_vm._s(year)+" ")])])]})],2)]})],2)}
 var DatePickerDecadevue_type_template_id_4d0d2424_staticRenderFns = []
 
@@ -22452,12 +22559,12 @@ var DatePickerDecade_component = normalizeComponent(
 )
 
 /* harmony default export */ var DatePickerDecade = (DatePickerDecade_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a8e46aec-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DatePicker/DatePickerYear.vue?vue&type=template&id=4fb3458c&
-var DatePickerYearvue_type_template_id_4fb3458c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"date-picker-year"},[_vm._l((_vm.months),function(chunk,index){return [_c('div',{key:index,staticClass:"date-picker-year__row"},[_vm._l((chunk),function(month){return [_c('div',{key:month.index,staticClass:"date-picker-year__item"},[_c('button',{staticClass:"btn date-time-picker-button",class:_vm.className(month.index),attrs:{"type":"button"},on:{"click":function($event){return _vm.select(month.index)}}},[_vm._v(" "+_vm._s(month.title)+" ")])])]})],2)]})],2)}
-var DatePickerYearvue_type_template_id_4fb3458c_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"05b16931-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DatePicker/DatePickerYear.vue?vue&type=template&id=5134d8e4&
+var DatePickerYearvue_type_template_id_5134d8e4_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"date-picker-year"},[_vm._l((_vm.months),function(chunk,index){return [_c('div',{key:index,staticClass:"date-picker-year__row"},[_vm._l((chunk),function(month){return [_c('div',{key:month.index,staticClass:"date-picker-year__item"},[_c('button',{staticClass:"btn date-time-picker-button",class:_vm.className(month.index),attrs:{"type":"button"},on:{"click":function($event){return _vm.select(month.index)}}},[_vm._v(" "+_vm._s(month.title)+" ")])])]})],2)]})],2)}
+var DatePickerYearvue_type_template_id_5134d8e4_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/DatePicker/DatePickerYear.vue?vue&type=template&id=4fb3458c&
+// CONCATENATED MODULE: ./src/components/DatePicker/DatePickerYear.vue?vue&type=template&id=5134d8e4&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/@vue/cli-plugin-babel/node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DatePicker/DatePickerYear.vue?vue&type=script&lang=js&
 
@@ -22548,8 +22655,8 @@ var DatePickerYearvue_type_template_id_4fb3458c_staticRenderFns = []
 
 var DatePickerYear_component = normalizeComponent(
   DatePicker_DatePickerYearvue_type_script_lang_js_,
-  DatePickerYearvue_type_template_id_4fb3458c_render,
-  DatePickerYearvue_type_template_id_4fb3458c_staticRenderFns,
+  DatePickerYearvue_type_template_id_5134d8e4_render,
+  DatePickerYearvue_type_template_id_5134d8e4_staticRenderFns,
   false,
   null,
   null,
@@ -22558,12 +22665,12 @@ var DatePickerYear_component = normalizeComponent(
 )
 
 /* harmony default export */ var DatePickerYear = (DatePickerYear_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a8e46aec-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DatePicker/DatePickerHeader.vue?vue&type=template&id=ee57ad0a&
-var DatePickerHeadervue_type_template_id_ee57ad0a_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"date-picker-header"},[_c('button',{staticClass:"btn btn-light",attrs:{"type":"button"},on:{"click":_vm.previous}},[_c('ChevronLeftSolid',{attrs:{"width":7}})],1),_c('div',{staticClass:"date-picker-header__container"},[(_vm.isShowMonthName)?_c('div',{staticClass:"flex-fill text-right"},[_c('button',{staticClass:"btn btn-link pr-1",attrs:{"type":"button"},on:{"click":_vm.showYear}},[_vm._v(" "+_vm._s(_vm.monthName)+" ")])]):_vm._e(),(_vm.isShowYear)?_c('div',{staticClass:"flex-fill",class:{'text-left': _vm.isShowMonthName}},[_c('button',{staticClass:"btn btn-link",class:{'pl-1': _vm.isShowMonthName},attrs:{"type":"button"},on:{"click":_vm.showDecade}},[_vm._v(" "+_vm._s(_vm.shownYear)+" ")])]):_vm._e(),(_vm.isShowDecade)?_c('div',{staticClass:"flex-fill"},[_c('button',{staticClass:"btn btn-link",attrs:{"type":"button"},on:{"click":_vm.showCentury}},[_vm._v(" "+_vm._s(_vm.decadeStartYear)+" - "+_vm._s(_vm.decadeFinishYear)+" ")])]):_vm._e(),(_vm.isShowCentury)?_c('div',{staticClass:"flex-fill"},[_c('button',{staticClass:"btn",attrs:{"type":"button","disabled":""}},[_vm._v(" "+_vm._s(_vm.centuryStartYear)+" - "+_vm._s(_vm.centuryFinishYear)+" ")])]):_vm._e()]),_c('button',{staticClass:"btn btn-light",attrs:{"type":"button"},on:{"click":_vm.next}},[_c('ChevronRightSolid',{attrs:{"width":7}})],1)])}
-var DatePickerHeadervue_type_template_id_ee57ad0a_staticRenderFns = []
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"05b16931-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DatePicker/DatePickerHeader.vue?vue&type=template&id=112569fb&
+var DatePickerHeadervue_type_template_id_112569fb_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"date-picker-header"},[_c('button',{staticClass:"btn btn-light",attrs:{"type":"button"},on:{"click":_vm.previous}},[_c('ChevronLeftSolid',{attrs:{"width":7}})],1),_c('div',{staticClass:"date-picker-header__container"},[(_vm.isShowMonthName)?_c('div',{staticClass:"flex-fill text-right"},[_c('button',{staticClass:"btn btn-link pr-1",attrs:{"type":"button"},on:{"click":_vm.showYear}},[_vm._v(" "+_vm._s(_vm.monthName)+" ")])]):_vm._e(),(_vm.isShowYear)?_c('div',{staticClass:"flex-fill",class:{'text-left': _vm.isShowMonthName}},[_c('button',{staticClass:"btn btn-link",class:{'pl-1': _vm.isShowMonthName},attrs:{"type":"button"},on:{"click":_vm.showDecade}},[_vm._v(" "+_vm._s(_vm.shownYear)+" ")])]):_vm._e(),(_vm.isShowDecade)?_c('div',{staticClass:"flex-fill"},[_c('button',{staticClass:"btn btn-link",attrs:{"type":"button"},on:{"click":_vm.showCentury}},[_vm._v(" "+_vm._s(_vm.decadeStartYear)+" - "+_vm._s(_vm.decadeFinishYear)+" ")])]):_vm._e(),(_vm.isShowCentury)?_c('div',{staticClass:"flex-fill"},[_c('button',{staticClass:"btn",attrs:{"type":"button","disabled":""}},[_vm._v(" "+_vm._s(_vm.centuryStartYear)+" - "+_vm._s(_vm.centuryFinishYear)+" ")])]):_vm._e()]),_c('button',{staticClass:"btn btn-light",attrs:{"type":"button"},on:{"click":_vm.next}},[_c('ChevronRightSolid',{attrs:{"width":7}})],1)])}
+var DatePickerHeadervue_type_template_id_112569fb_staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/DatePicker/DatePickerHeader.vue?vue&type=template&id=ee57ad0a&
+// CONCATENATED MODULE: ./src/components/DatePicker/DatePickerHeader.vue?vue&type=template&id=112569fb&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.array.includes.js
 var es_array_includes = __webpack_require__("caad");
@@ -22574,7 +22681,7 @@ var es_object_values = __webpack_require__("07ac");
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.string.includes.js
 var es_string_includes = __webpack_require__("2532");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a8e46aec-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FontAwesome/ChevronRightSolid.vue?vue&type=template&id=12af12c6&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"05b16931-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FontAwesome/ChevronRightSolid.vue?vue&type=template&id=12af12c6&
 var ChevronRightSolidvue_type_template_id_12af12c6_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{staticClass:"svg-inline--fa fa-chevron-right fa-w-10",style:(_vm.styles),attrs:{"aria-hidden":"true","focusable":"false","data-prefix":"fas","data-icon":"chevron-right","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 320 512"}},[_c('path',{attrs:{"fill":"currentColor","d":"M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"}})])}
 var ChevronRightSolidvue_type_template_id_12af12c6_staticRenderFns = []
 
@@ -22640,7 +22747,7 @@ var ChevronRightSolid_component = normalizeComponent(
 )
 
 /* harmony default export */ var ChevronRightSolid = (ChevronRightSolid_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"a8e46aec-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FontAwesome/ChevronLeftSolid.vue?vue&type=template&id=2eec12c3&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"05b16931-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FontAwesome/ChevronLeftSolid.vue?vue&type=template&id=2eec12c3&
 var ChevronLeftSolidvue_type_template_id_2eec12c3_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('svg',{staticClass:"svg-inline--fa fa-chevron-left fa-w-10",style:(_vm.styles),attrs:{"aria-hidden":"true","focusable":"false","data-prefix":"fas","data-icon":"chevron-left","role":"img","xmlns":"http://www.w3.org/2000/svg","viewBox":"0 0 320 512"}},[_c('path',{attrs:{"fill":"currentColor","d":"M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"}})])}
 var ChevronLeftSolidvue_type_template_id_2eec12c3_staticRenderFns = []
 
@@ -22786,14 +22893,12 @@ var ChevronLeftSolid_component = normalizeComponent(
 
 
 
-
 /* harmony default export */ var DatePickerHeadervue_type_script_lang_js_ = ({
   name: 'DatePickerHeader',
   components: {
     ChevronLeftSolid: ChevronLeftSolid,
     ChevronRightSolid: ChevronRightSolid
   },
-  mixins: [ShownMonthMixin],
   props: {
     type: {
       type: String,
@@ -22805,6 +22910,13 @@ var ChevronLeftSolid_component = normalizeComponent(
     shownYear: {
       type: Number,
       required: true
+    },
+    shownMonth: {
+      type: Number,
+      required: true,
+      validator: function validator(value) {
+        return value >= 0 && value <= 11;
+      }
     }
   },
   computed: {
@@ -22902,8 +23014,8 @@ var ChevronLeftSolid_component = normalizeComponent(
 
 var DatePickerHeader_component = normalizeComponent(
   DatePicker_DatePickerHeadervue_type_script_lang_js_,
-  DatePickerHeadervue_type_template_id_ee57ad0a_render,
-  DatePickerHeadervue_type_template_id_ee57ad0a_staticRenderFns,
+  DatePickerHeadervue_type_template_id_112569fb_render,
+  DatePickerHeadervue_type_template_id_112569fb_staticRenderFns,
   false,
   null,
   null,
@@ -23072,8 +23184,8 @@ var DatePickerHeader_component = normalizeComponent(
 
 var DatePicker_component = normalizeComponent(
   components_DatePickervue_type_script_lang_js_,
-  DatePickervue_type_template_id_362ccde4_render,
-  DatePickervue_type_template_id_362ccde4_staticRenderFns,
+  DatePickervue_type_template_id_a80aedb8_render,
+  DatePickervue_type_template_id_a80aedb8_staticRenderFns,
   false,
   null,
   null,
@@ -23082,176 +23194,11 @@ var DatePicker_component = normalizeComponent(
 )
 
 /* harmony default export */ var DatePicker = (DatePicker_component.exports);
-// CONCATENATED MODULE: ./src/mixins/SelectedMonthMixin.js
-/* harmony default export */ var SelectedMonthMixin = ({
-  props: {
-    selectedMonth: {
-      type: null,
-      required: true,
-      validator: function validator(value) {
-        if (typeof value === 'number') {
-          return value >= 0 && value <= 11;
-        }
-
-        return value === null;
-      }
-    }
-  }
-});
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/@vue/cli-plugin-babel/node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/DateTimePickerPopup.vue?vue&type=script&lang=js&
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ var DateTimePickerPopupvue_type_script_lang_js_ = ({
-  name: 'DateTimePickerPopup',
-  components: {
-    DatePicker: DatePicker
-  },
-  mixins: [ShownMonthMixin, SelectedMonthMixin],
-  props: {
-    shownYear: {
-      type: Number,
-      required: true
-    },
-    selectedYear: {
-      type: null,
-      required: true
-    },
-    selectedDay: {
-      type: null,
-      required: true
-    }
-  },
-  data: function data() {
-    return {
-      offsetLeft: 0,
-      offsetTop: 0,
-      offsetHeight: 0,
-      offsetWidth: 0
-    };
-  },
-  computed: {
-    styles: function styles() {
-      var result = {};
-
-      if (this.offsetLeft + this.offsetWidth > window.innerWidth + window.scrollX) {
-        result.right = 0;
-      } //if (this.offsetTop + this.offsetHeight > window.innerHeight) {
-      //    result.bottom = 0;
-      //}
-
-
-      return result;
-    }
-  },
-  mounted: function mounted() {
-    this.defineOffsetLeft();
-    this.defineOffsetTop();
-    this.defineOffsetSize();
-    this.listenResizeWindow();
-  },
-  methods: {
-    listenResizeWindow: function listenResizeWindow() {
-      var _this = this;
-
-      window.addEventListener('resize', function () {
-        _this.defineOffsetLeft();
-
-        _this.defineOffsetTop();
-      });
-    },
-    selectDay: function selectDay(year, month, day) {
-      this.$emit('select', year, month, day);
-    },
-    showDate: function showDate(year, month) {
-      this.$emit('show', year, month);
-    },
-    defineOffsetLeft: function defineOffsetLeft() {
-      var result = 0;
-      var node = this.$el;
-
-      if (node) {
-        result += node.offsetLeft;
-
-        while (node && node.offsetParent) {
-          node = node.offsetParent;
-
-          if (node) {
-            result += node.offsetLeft;
-          }
-        }
-      }
-
-      this.offsetLeft = result;
-    },
-    defineOffsetTop: function defineOffsetTop() {
-      var result = 0;
-      var node = this.$el;
-
-      if (node) {
-        result += node.offsetTop;
-
-        while (node && node.offsetParent) {
-          node = node.offsetParent;
-
-          if (node) {
-            result += node.offsetTop;
-          }
-        }
-      }
-
-      this.offsetTop = result;
-    },
-    defineOffsetSize: function defineOffsetSize() {
-      if (this.$el) {
-        this.offsetWidth = this.$el.offsetWidth;
-        this.offsetHeight = this.$el.offsetHeight;
-      }
-    }
-  }
-});
-// CONCATENATED MODULE: ./src/components/DateTimePickerPopup.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_DateTimePickerPopupvue_type_script_lang_js_ = (DateTimePickerPopupvue_type_script_lang_js_); 
-// CONCATENATED MODULE: ./src/components/DateTimePickerPopup.vue
-
-
-
-
-
-/* normalize component */
-
-var DateTimePickerPopup_component = normalizeComponent(
-  components_DateTimePickerPopupvue_type_script_lang_js_,
-  DateTimePickerPopupvue_type_template_id_a43be08c_render,
-  DateTimePickerPopupvue_type_template_id_a43be08c_staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* harmony default export */ var DateTimePickerPopup = (DateTimePickerPopup_component.exports);
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/@vue/cli-plugin-babel/node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/DateTimePicker.vue?vue&type=script&lang=js&
+//
+//
+//
+//
 //
 //
 //
@@ -23297,7 +23244,7 @@ var DateTimePickerPopup_component = normalizeComponent(
 /* harmony default export */ var DateTimePickervue_type_script_lang_js_ = ({
   name: 'DateTimePicker',
   components: {
-    DateTimePickerPopup: DateTimePickerPopup,
+    DatePicker: DatePicker,
     DateTimePickerInput: DateTimePickerInput
   },
   props: {
@@ -23408,8 +23355,8 @@ var DateTimePickerPopup_component = normalizeComponent(
       }
     },
     showPicker: function showPicker() {
-      this.defineShownData();
       this.isShowPicker = true;
+      this.defineShownData();
     },
     hidePicker: function hidePicker() {
       this.isShowPicker = false;
@@ -23450,80 +23397,6 @@ var DateTimePickerPopup_component = normalizeComponent(
 
 var DateTimePicker_component = normalizeComponent(
   src_DateTimePickervue_type_script_lang_js_,
-  DateTimePickervue_type_template_id_021f6b76_render,
-  DateTimePickervue_type_template_id_021f6b76_staticRenderFns,
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* harmony default export */ var DateTimePicker = (DateTimePicker_component.exports);
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/@vue/cli-plugin-babel/node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/App.vue?vue&type=script&lang=js&
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-/* harmony default export */ var Appvue_type_script_lang_js_ = ({
-  name: 'app',
-  data: function data() {
-    return {
-      date: null,
-      dateIsValid: false
-    };
-  },
-  components: {
-    DateTimePicker: DateTimePicker
-  },
-  methods: {
-    isValidDate: function isValidDate(payload) {
-      this.dateIsValid = payload;
-    }
-  }
-});
-// CONCATENATED MODULE: ./src/App.vue?vue&type=script&lang=js&
- /* harmony default export */ var src_Appvue_type_script_lang_js_ = (Appvue_type_script_lang_js_); 
-// CONCATENATED MODULE: ./src/App.vue
-
-
-
-
-
-/* normalize component */
-
-var App_component = normalizeComponent(
-  src_Appvue_type_script_lang_js_,
   render,
   staticRenderFns,
   false,
@@ -23533,11 +23406,18 @@ var App_component = normalizeComponent(
   
 )
 
-/* harmony default export */ var App = (App_component.exports);
+/* harmony default export */ var DateTimePicker = (DateTimePicker_component.exports);
+// CONCATENATED MODULE: ./index.js
+
+/* harmony default export */ var index = ({
+  install: function install(vue) {
+    vue.component('DateTimePicker', DateTimePicker);
+  }
+});
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
-/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (App);
+/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (index);
 
 
 
@@ -23670,6 +23550,6 @@ module.exports = NATIVE_SYMBOL
 
 /***/ })
 
-/******/ })["default"];
+/******/ });
 });
 //# sourceMappingURL=vue-calendar.umd.js.map
