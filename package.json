@@ -17,7 +17,7 @@
   ],
   "version": "0.1.16-alpha",
   "private": false,
-  "main": "index.js",
+  "main": "dist/vue-calendar.umd.min.js",
   "author": {
     "email": "lapaliv@gmail.com",
     "name": "Lapin Alex"
