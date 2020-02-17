@@ -32,7 +32,8 @@ const FormatterParser = function (format, target) {
     const symbols = format.match(/\\?./g);
     const originalTarget = target;
 
-    for (let item of symbols) {
+    for (let i = 0; i < symbols.length; i++) {
+        const item = symbols[i];
         if (typeof this[item] === 'function' && item.length === 1) {
             target = this[item](target);
 
@@ -135,8 +136,9 @@ FormatterParser.prototype.z = function (target) {
         /^([1-9])/,
     ];
 
-    for (let item of regexps) {
-        const match = target.match(item);
+    for (let i = 0; i < regexps.length; i++) {
+        const regexp = regexps[i];
+        const match = target.match(regexp);
 
         if (match) {
             this._dayOfYear = parseInt(match[1]);
@@ -153,8 +155,9 @@ FormatterParser.prototype.W = function (target) {
         /^[0-9]/,
     ];
 
-    for (let item of regexps) {
-        const match = target.match(item);
+    for (let i = 0; i < regexps.length; i++) {
+        const regexp = regexps[i];
+        const match = target.match(regexp);
         if (match) {
             this._weekOfYear = parseInt(match[1]);
             return target.slice(match[1].length);
@@ -202,8 +205,9 @@ FormatterParser.prototype.M = function (target) {
 FormatterParser.prototype.n = function (target) {
     const regexps = [/^1[0-2]/, /^[1-9]/];
 
-    for (let item of regexps) {
-        const match = target.match(item);
+    for (let i = 0; i < regexps.length; i++) {
+        const regexp = regexps[i];
+        const match = target.match(regexp);
         if (match) {
             this._month = parseInt(match[1]);
             return target.slice(match[1].length);
@@ -216,8 +220,9 @@ FormatterParser.prototype.n = function (target) {
 FormatterParser.prototype.t = function (target) {
     const regexps = [/^([1-2][0-9]|3[0-1])/, /^[1-9]/];
 
-    for (let item of regexps) {
-        const match = target.match(item);
+    for (let i = 0; i < regexps.length; i++) {
+        const regexp = regexps[i];
+        const match = target.match(regexp);
         if (match) {
             this._month = parseInt(match[1]);
             return target.slice(match[1]);
@@ -297,8 +302,9 @@ FormatterParser.prototype.g = function (target) {
         /^[0-9]/,
     ];
 
-    for (let item of regexps) {
-        const match = target.match(item);
+    for (let i = 0; i < regexps.length; i++) {
+        const regexp = regexps[i];
+        const match = target.match(regexp);
         if (match) {
             this._divideHours = parseInt(match[1]);
             return target.slice(match[1].length);
@@ -314,7 +320,8 @@ FormatterParser.prototype.G = function (target) {
         /^[0-9]/,
     ];
 
-    for (let regexp of regexps) {
+    for (let i = 0; i < regexps.length; i++) {
+        const regexp = regexps[i];
         const match = target.match(regexp);
         if (match) {
             this._hours = parseInt(match[1]);
