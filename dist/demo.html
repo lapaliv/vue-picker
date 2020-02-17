@@ -1,0 +1,19 @@
+<meta charset="utf-8">
+<title>vue-calendar demo</title>
+<script src="https://unpkg.com/vue"></script>
+<script src="./vue-calendar.umd.js"></script>
+
+<link rel="stylesheet" href="./vue-calendar.css">
+
+
+<div id="app">
+  <demo></demo>
+</div>
+
+<script>
+new Vue({
+  components: {
+    demo: vue-calendar
+  }
+}).$mount('#app')
+</script>
