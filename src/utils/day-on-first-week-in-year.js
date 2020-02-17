@@ -1,10 +1,11 @@
 export function day_on_first_week_in_year(year) {
     const date = new Date(year, 0, 1);
-    if (date.getDay() === 1) {
+    const dateDay = date.getDay() || 0;
+    if (dateDay === 1) {
         return 1;
-    } else if (date.getDay() === 0) {
+    } else if (dateDay === 0) {
         return 2;
     }
 
-    return 7 - date.getDay() + 2;
+    return 7 - dateDay + 2;
 }
