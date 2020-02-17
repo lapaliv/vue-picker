@@ -13,11 +13,11 @@ FormatterBuilder.prototype.build = function (format) {
     const symbols = format.match(/\\?./g);
     let result = '';
 
-    for (const symbol of symbols) {
-        if (typeof this[symbol] === 'function' && symbol.length === 1) {
-            result += this[symbol]();
+    for (let item of symbols) {
+        if (typeof this[item] === 'function' && item.length === 1) {
+            result += this[item]();
         } else {
-            result += symbol;
+            result += item;
         }
     }
 
