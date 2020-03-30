@@ -1,10 +1,10 @@
 .date-time-picker .date-time-picker-popup {
-  background: $white;
-  border: $border-width solid $border-color;
-  box-shadow: $box-shadow;
-  border-radius: $border-radius-lg;
+  background: $date-time-picker-white;
+  border: $date-time-picker-border-width solid $date-time-picker-border-color;
+  box-shadow: $date-time-picker-box-shadow;
+  border-radius: $date-time-picker-border-radius-lg;
   position: absolute;
-  margin-top: $spacer-1;
+  margin-top: $date-time-picker-spacer-1;
   width: 300px;
   z-index: 10;
 

@@ -97,7 +97,6 @@ export class FormatterBuilder {
     }
 
     F() {
-        console.log('F month', this.formatter.month);
         return MONTHS[this.formatter.month];
     }
 

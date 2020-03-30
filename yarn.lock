@@ -990,6 +990,10 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
+"@lapaliv/datetime-formatter@https://github.com/lapaliv/datetime-formatter.git":
+  version "0.1.7"
+  resolved "https://github.com/lapaliv/datetime-formatter.git#dfa0e3da671c3f3c81ba9f99af8eb7ec06c3c86c"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"

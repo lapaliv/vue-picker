@@ -29,6 +29,7 @@
             tabindex="0"
         >
             <DatePicker
+                v-if="hasDate"
                 :year="shownYear"
                 :month="shownMonth"
                 :selected-year="selectedYear"
@@ -37,18 +38,27 @@
                 @select="selectDay"
                 @show="showDate"
             />
+            <TimePicker
+                v-if="hasTime"
+                :format="targetPrintFormat"
+                :hours="hours"
+                :minutes="minutes"
+                :seconds="seconds"
+                @input="setTime"
+            />
         </div>
     </div>
 </template>
 
 <script>
-    import {Formatter} from 'src/utils/formatter';
     import DateTimePickerInput from 'src/components/DateTimePickerInput';
     import DatePicker from 'src/components/DatePicker';
+    import TimePicker from 'src/components/TimePicker';
+    import DateTimeFormatter from '@lapaliv/datetime-formatter';
 
     export default {
         name: 'DateTimePicker',
-        components: {DatePicker, DateTimePickerInput},
+        components: {TimePicker, DatePicker, DateTimePickerInput},
         props: {
             showIconPrepend: {
                 type: Boolean,
@@ -82,6 +92,9 @@
                 selectedYear: null,
                 selectedMonth: null,
                 selectedDay: null,
+                hours: 0,
+                minutes: 0,
+                seconds: 0,
 
                 printDate: null,
                 resultDate: null,
@@ -94,19 +107,35 @@
             targetPrintFormat() {
                 return this.printFormat || this.format;
             },
+            hasDate() {
+                const target = ['d', 'D', 'j', 'l', 'N', 'S', 'w', 'z', 'W', 'F', 'm', 'M', 'n', 't', 'L', 'o', 'Y', 'y'];
+                for (let targetSymbol of target) {
+                    if (this.hasSymbol(this.targetPrintFormat, targetSymbol)) {
+                        return true;
+                    }
+                }
+
+                return false;
+            },
+            hasTime() {
+                const target = ['a', 'A', 'B', 'g', 'G', 'h', 'H', 'i', 's', 'u', 'v'];
+                for (let targetSymbol of target) {
+                    if (this.hasSymbol(this.targetPrintFormat, targetSymbol)) {
+                        return true;
+                    }
+                }
+
+                return false;
+            },
         },
         watch: {
-            selectedDay(day) {
-                if (day) {
-                    const formatter = new Formatter(this.selectedYear, this.selectedMonth, this.selectedDay);
-                    this.printDate = formatter.build(this.targetPrintFormat);
-                    this.resultDate = formatter.build(this.targetResultFormat);
-                }
+            selectedDay() {
+                this.definePrintDate();
             },
             printDate(value) {
                 if (this.value !== value) {
                     try {
-                        const parser = Formatter.parse(this.targetPrintFormat, value);
+                        const parser = DateTimeFormatter.createFromFormat(this.targetPrintFormat, value);
                         this.selectDay(parser.year, parser.month, parser.day);
                     } catch (e) {
                         this.resultDate = value;
@@ -120,7 +149,7 @@
             value: {
                 handler(value) {
                     try {
-                        const parser = Formatter.parse(this.targetResultFormat, value);
+                        const parser = DateTimeFormatter.createFromFormat(this.targetResultFormat, value);
                         this.selectDay(parser.year, parser.month, parser.day);
                     } catch (e) {
                         this.printDate = value;
@@ -135,6 +164,15 @@
                 }
 
                 this.$emit('is-valid', this.selectedDay !== null);
+            },
+            hours() {
+                this.definePrintDate();
+            },
+            minutes() {
+                this.definePrintDate();
+            },
+            seconds() {
+                this.definePrintDate();
             },
         },
         beforeMount() {
@@ -188,6 +226,32 @@
 
                 this.shownYear = this.selectedYear || now.getFullYear();
                 this.shownMonth = this.selectedMonth || now.getMonth();
+            },
+            hasSymbol(format, symbol) {
+                return Array.isArray(
+                    format.match(
+                        new RegExp(`(^|[^\\\\])${symbol}`)
+                    )
+                );
+            },
+            setTime(hours, minutes, seconds) {
+                this.hours = hours;
+                this.minutes = minutes;
+                this.seconds = seconds;
+            },
+            definePrintDate() {
+                if (this.selectedYear && this.selectedMonth && this.selectedDay) {
+                    const formatter = new DateTimeFormatter(
+                        this.selectedYear,
+                        this.selectedMonth,
+                        this.selectedDay,
+                        this.hours,
+                        this.minutes,
+                        this.seconds
+                    );
+                    this.printDate = formatter.format(this.targetPrintFormat);
+                    this.resultDate = formatter.format(this.targetResultFormat);
+                }
             },
         },
     };

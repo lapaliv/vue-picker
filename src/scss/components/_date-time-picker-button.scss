@@ -11,10 +11,10 @@
   }
 
   &--muted {
-    color: lighten($secondary, 20%);
+    color: lighten($date-time-picker-secondary, 20%);
 
     &:hover {
-      color: $secondary;
+      color: $date-time-picker-secondary;
     }
   }
 }

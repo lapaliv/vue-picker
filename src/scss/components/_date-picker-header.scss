@@ -3,8 +3,8 @@
   padding: 0.5rem 0.5rem 0 0.5rem;
 
   .btn:not(:hover) {
-    background-color: $white;
-    border-color: $white;
+    background-color: $date-time-picker-white;
+    border-color: $date-time-picker-white;
   }
 
   &__container {
@@ -16,7 +16,7 @@
 
     .btn {
       flex-grow: 1;
-      color: $black;
+      color: $date-time-picker-black;
       font-weight: bold;
       text-align: center;
 
@@ -26,7 +26,7 @@
       }
 
       &:hover {
-        color: $black;
+        color: $date-time-picker-black;
       }
     }
   }

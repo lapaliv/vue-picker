@@ -23,7 +23,7 @@
 
         <DateTimePicker
             v-model="date"
-            print-format="d.m.Y"
+            print-format="d.m.Y H:i:s"
             @is-valid="isValidDate"
         />
     </div>
