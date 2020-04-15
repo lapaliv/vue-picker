@@ -25,6 +25,16 @@
             v-model="date"
             print-format="d.m.Y H:i:s"
             @is-valid="isValidDate"
+            class="mb-3"
+        />
+
+        {{ date2 }}
+        <DateTimePicker
+            v-model="date2"
+            print-format="d.m.Y H:i"
+            format="Y-m-d H:i"
+            @is-valid="isValidDate"
+            class="mb-3"
         />
     </div>
 </template>
@@ -40,6 +50,7 @@
         data() {
             return {
                 date: null,
+                date2: null,
                 dateIsValid: false,
             };
         },

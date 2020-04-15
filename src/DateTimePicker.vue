@@ -121,9 +121,11 @@
             },
             hasTime() {
                 const target = ['a', 'A', 'B', 'g', 'G', 'h', 'H', 'i', 's', 'u', 'v'];
-                for (let targetSymbol of target) {
+                for (const targetSymbol of target) {
                     if (this.hasSymbol(this.targetPrintFormat, targetSymbol)) {
                         return true;
+                    } else {
+                        console.log('hasTime', targetSymbol, 'not found');
                     }
                 }
 
@@ -195,6 +197,11 @@
                 this.selectedDay = day;
 
                 this.showDate(year, month);
+                console.log('selectDay', {
+                    hasTime: this.hasTime,
+                    targetPrintFormat: this.targetPrintFormat,
+                });
+
                 if (!this.hasTime) {
                     this.hidePicker();
                 } else {
