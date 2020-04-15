@@ -146,9 +146,17 @@
                 }, 10);
             },
             scrollAllRefs() {
-                this.scrollTo(this.$refs.hours, this.$refs.hour[this.hours].offsetTop);
-                this.scrollTo(this.$refs.minutes, this.$refs.minute[this.minutes].offsetTop);
-                this.scrollTo(this.$refs.seconds, this.$refs.second[this.seconds].offsetTop);
+                if (this.isShowHours) {
+                    this.scrollTo(this.$refs.hours, this.$refs.hour[this.hours].offsetTop);
+                }
+
+                if (this.isShowMinutes) {
+                    this.scrollTo(this.$refs.minutes, this.$refs.minute[this.minutes].offsetTop);
+                }
+
+                if (this.isShowSeconds) {
+                    this.scrollTo(this.$refs.seconds, this.$refs.second[this.seconds].offsetTop);
+                }
             }
         },
     };
