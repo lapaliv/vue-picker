@@ -1,4 +1,4 @@
-import DateTimePicker from './src/DateTimePicker';
+import DateTimePicker from '@lapaliv/vue-picker/src/DateTimePicker';
 
 export default {
     install: function (vue) {

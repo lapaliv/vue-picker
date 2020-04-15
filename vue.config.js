@@ -3,7 +3,7 @@ module.exports = {
     configureWebpack: {
         resolve: {
             alias: {
-                'src': __dirname + '/src',
+                '@lapaliv/vue-picker': __dirname,
             }
         }
     },

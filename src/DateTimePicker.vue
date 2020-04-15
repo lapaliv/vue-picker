@@ -51,9 +51,9 @@
 </template>
 
 <script>
-    import DateTimePickerInput from 'src/components/DateTimePickerInput';
-    import DatePicker from 'src/components/DatePicker';
-    import TimePicker from 'src/components/TimePicker';
+    import DateTimePickerInput from '@lapaliv/vue-picker/src/components/DateTimePickerInput';
+    import DatePicker from '@lapaliv/vue-picker/src/components/DatePicker';
+    import TimePicker from '@lapaliv/vue-picker/src/components/TimePicker';
     import DateTimeFormatter from '@lapaliv/datetime-formatter';
 
     export default {

@@ -27,7 +27,7 @@
 
 <script>
     import {chunk} from 'lodash';
-    import {SHORT_MONTHS} from 'src/consts';
+    import {SHORT_MONTHS} from '@lapaliv/vue-picker/src/consts';
 
     export default {
         name: 'Year',

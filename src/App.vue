@@ -41,9 +41,8 @@
 
 <script>
     import "bootstrap/scss/bootstrap.scss";
-    import 'src/scss/date-time-picker.scss';
-
-    import DateTimePicker from 'src/DateTimePicker';
+    import '@lapaliv/vue-picker/src/scss/date-time-picker.scss';
+    import DateTimePicker from '@lapaliv/vue-picker/src/DateTimePicker';
 
     export default {
         name: 'app',

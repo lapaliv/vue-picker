@@ -1,11 +1,11 @@
-import {SHORT_DAYS} from 'src/consts';
-import {DAYS} from 'src/consts';
-import {MONTHS} from 'src/consts';
-import {SHORT_MONTHS} from 'src/consts';
-import {pascalCase} from 'src/utils/pascal_case';
-import {count_days_in_months} from 'src/utils/count-days-in-months';
-import {is_leap_year} from 'src/utils/is-leap-year';
-import {day_on_first_week_in_year} from 'src/utils/day-on-first-week-in-year';
+import {SHORT_DAYS} from '@lapaliv/vue-picker/src/consts';
+import {DAYS} from '@lapaliv/vue-picker/src/consts';
+import {MONTHS} from '@lapaliv/vue-picker/src/consts';
+import {SHORT_MONTHS} from '@lapaliv/vue-picker/src/consts';
+import {pascalCase} from '@lapaliv/vue-picker/src/utils/pascal_case';
+import {count_days_in_months} from '@lapaliv/vue-picker/src/utils/count-days-in-months';
+import {is_leap_year} from '@lapaliv/vue-picker/src/utils/is-leap-year';
+import {day_on_first_week_in_year} from '@lapaliv/vue-picker/src/utils/day-on-first-week-in-year';
 
 export class FormatterParser {
     constructor(format, target) {
