@@ -15,7 +15,7 @@
     "datetimepicker",
     "calendar"
   ],
-  "version": "0.1.16-alpha",
+  "version": "0.1.17-alpha",
   "private": false,
   "main": "dist/vue-calendar.umd.min.js",
   "author": {

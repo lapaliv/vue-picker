@@ -29,7 +29,7 @@
             tabindex="0"
         >
             <DatePicker
-                v-if="hasDate"
+                v-if="isShowDatePicker"
                 :year="shownYear"
                 :month="shownMonth"
                 :selected-year="selectedYear"
@@ -39,7 +39,7 @@
                 @show="showDate"
             />
             <TimePicker
-                v-if="hasTime"
+                v-else-if="isShowTimePicker"
                 :format="targetPrintFormat"
                 :hours="hours"
                 :minutes="minutes"
@@ -98,6 +98,8 @@
 
                 printDate: null,
                 resultDate: null,
+
+                view: 'date',
             };
         },
         computed: {
@@ -127,6 +129,12 @@
 
                 return false;
             },
+            isShowDatePicker(){
+                return this.hasDate && this.view === 'date';
+            },
+            isShowTimePicker() {
+                return this.hasTime && this.view === 'time';
+            },
         },
         watch: {
             selectedDay() {
@@ -137,6 +145,7 @@
                     try {
                         const parser = DateTimeFormatter.createFromFormat(this.targetPrintFormat, value);
                         this.selectDay(parser.year, parser.month, parser.day);
+                        this.setTime(parser.hours, parser.minutes, parser.seconds);
                     } catch (e) {
                         this.resultDate = value;
                         this.cleanSelectedData();
@@ -165,19 +174,16 @@
 
                 this.$emit('is-valid', this.selectedDay !== null);
             },
-            hours() {
-                this.definePrintDate();
-            },
-            minutes() {
-                this.definePrintDate();
-            },
-            seconds() {
-                this.definePrintDate();
-            },
         },
         beforeMount() {
             this.defineShownData();
             this.listenDocumentClickEvent();
+
+            if (this.hasDate || !this.hasTime) {
+                this.view = 'date';
+            } else if (this.hasTime) {
+                this.view = 'time';
+            }
         },
         beforeDestroy() {
             document.removeEventListener('click', this.listenerDocumentClick, true);
@@ -185,11 +191,15 @@
         methods: {
             selectDay(year, month, day) {
                 this.selectedYear = year;
-                this.selectedMonth = month;
+                this.selectedMonth = month + 1;
                 this.selectedDay = day;
 
                 this.showDate(year, month);
-                this.hidePicker();
+                if (!this.hasTime) {
+                    this.hidePicker();
+                } else {
+                    this.view = 'time';
+                }
             },
             showDate(year, month) {
                 this.shownYear = Math.max(1, year);
@@ -203,6 +213,7 @@
             },
             hidePicker() {
                 this.isShowPicker = false;
+                this.view = (this.hasDate || !this.hasTime) ? 'date' : 'time';
             },
             listenDocumentClickEvent() {
                 document.addEventListener('click', this.listenerDocumentClick, true);
@@ -238,6 +249,7 @@
                 this.hours = hours;
                 this.minutes = minutes;
                 this.seconds = seconds;
+                this.definePrintDate();
             },
             definePrintDate() {
                 if (this.selectedYear && this.selectedMonth && this.selectedDay) {
