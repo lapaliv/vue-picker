@@ -1,5 +1,8 @@
 <template>
-    <div class="time-picker">
+    <div
+        class="time-picker"
+        :style="styles"
+    >
         <div
             v-if="isShowHours"
             class="time-picker-column"
@@ -103,6 +106,23 @@
             },
             isShowSeconds() {
                 return this.hasSymbol(this.format, 's');
+            },
+            styles() {
+                let width = 0;
+
+                if (this.isShowHours) {
+                    width += 80;
+                }
+
+                if (this.isShowMinutes) {
+                    width += 80;
+                }
+
+                if (this.isShowSeconds) {
+                    width += 80;
+                }
+
+                return {width: `${width}px`};
             },
         },
         mounted() {
