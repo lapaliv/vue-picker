@@ -160,6 +160,7 @@
                     try {
                         const parser = DateTimeFormatter.createFromFormat(this.targetResultFormat, value);
                         this.selectDay(parser.year, parser.month, parser.day);
+                        this.setTime(parser.hours, parser.minutes, parser.seconds);
                     } catch (e) {
                         this.printDate = value;
                         this.cleanSelectedData();
