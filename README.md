@@ -1,1 +1,1 @@
-### Project in development
+### The project is under development
